@@ -48,6 +48,9 @@
             this.userLoginInput = new System.Windows.Forms.TextBox();
             this.registrationBoxExitButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.yellowMinimalizeButton = new System.Windows.Forms.Button();
+            this.exitRedButton = new System.Windows.Forms.Button();
             this.listView4 = new System.Windows.Forms.ListView();
             this.listView3 = new System.Windows.Forms.ListView();
             this.listView2 = new System.Windows.Forms.ListView();
@@ -56,9 +59,9 @@
             this.listView6 = new System.Windows.Forms.ListView();
             this.listView7 = new System.Windows.Forms.ListView();
             this.listView8 = new System.Windows.Forms.ListView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.yellowMinimalizeButton = new System.Windows.Forms.Button();
-            this.exitRedButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.femaleGender = new System.Windows.Forms.RadioButton();
+            this.maleGender = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +74,7 @@
             this.registerApplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registerApplyButton.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.registerApplyButton.ForeColor = System.Drawing.Color.White;
-            this.registerApplyButton.Location = new System.Drawing.Point(203, 338);
+            this.registerApplyButton.Location = new System.Drawing.Point(344, 338);
             this.registerApplyButton.Name = "registerApplyButton";
             this.registerApplyButton.Size = new System.Drawing.Size(131, 53);
             this.registerApplyButton.TabIndex = 0;
@@ -210,7 +213,7 @@
             this.returnToLoginBoxButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.returnToLoginBoxButton.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.returnToLoginBoxButton.ForeColor = System.Drawing.Color.White;
-            this.returnToLoginBoxButton.Location = new System.Drawing.Point(392, 338);
+            this.returnToLoginBoxButton.Location = new System.Drawing.Point(492, 338);
             this.returnToLoginBoxButton.Name = "returnToLoginBoxButton";
             this.returnToLoginBoxButton.Size = new System.Drawing.Size(161, 53);
             this.returnToLoginBoxButton.TabIndex = 17;
@@ -299,6 +302,41 @@
             this.panel1.Size = new System.Drawing.Size(796, 162);
             this.panel1.TabIndex = 24;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panel4.Controls.Add(this.yellowMinimalizeButton);
+            this.panel4.Controls.Add(this.exitRedButton);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(796, 34);
+            this.panel4.TabIndex = 29;
+            this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
+            this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
+            // 
+            // yellowMinimalizeButton
+            // 
+            this.yellowMinimalizeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.yellowMinimalizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowMinimalizeButton.Location = new System.Drawing.Point(726, 7);
+            this.yellowMinimalizeButton.Name = "yellowMinimalizeButton";
+            this.yellowMinimalizeButton.Size = new System.Drawing.Size(20, 20);
+            this.yellowMinimalizeButton.TabIndex = 12;
+            this.yellowMinimalizeButton.UseVisualStyleBackColor = false;
+            this.yellowMinimalizeButton.Click += new System.EventHandler(this.yellowMinimalizeButton_Click);
+            // 
+            // exitRedButton
+            // 
+            this.exitRedButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.exitRedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitRedButton.Location = new System.Drawing.Point(762, 7);
+            this.exitRedButton.Name = "exitRedButton";
+            this.exitRedButton.Size = new System.Drawing.Size(20, 20);
+            this.exitRedButton.TabIndex = 0;
+            this.exitRedButton.UseVisualStyleBackColor = false;
+            this.exitRedButton.Click += new System.EventHandler(this.exitRedButton_Click);
+            // 
             // listView4
             // 
             this.listView4.BackColor = System.Drawing.SystemColors.InfoText;
@@ -380,40 +418,39 @@
             this.listView8.TabIndex = 32;
             this.listView8.UseCompatibleStateImageBehavior = false;
             // 
-            // panel4
+            // label1
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.panel4.Controls.Add(this.yellowMinimalizeButton);
-            this.panel4.Controls.Add(this.exitRedButton);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(796, 34);
-            this.panel4.TabIndex = 29;
-            this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
-            this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(25, 324);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 19);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Your gender :";
             // 
-            // yellowMinimalizeButton
+            // femaleGender
             // 
-            this.yellowMinimalizeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.yellowMinimalizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowMinimalizeButton.Location = new System.Drawing.Point(726, 7);
-            this.yellowMinimalizeButton.Name = "yellowMinimalizeButton";
-            this.yellowMinimalizeButton.Size = new System.Drawing.Size(20, 20);
-            this.yellowMinimalizeButton.TabIndex = 12;
-            this.yellowMinimalizeButton.UseVisualStyleBackColor = false;
-            this.yellowMinimalizeButton.Click += new System.EventHandler(this.yellowMinimalizeButton_Click);
+            this.femaleGender.AutoSize = true;
+            this.femaleGender.Font = new System.Drawing.Font("Microsoft YaHei Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.femaleGender.Location = new System.Drawing.Point(28, 357);
+            this.femaleGender.Name = "femaleGender";
+            this.femaleGender.Size = new System.Drawing.Size(70, 23);
+            this.femaleGender.TabIndex = 34;
+            this.femaleGender.TabStop = true;
+            this.femaleGender.Text = "Female";
+            this.femaleGender.UseVisualStyleBackColor = true;
             // 
-            // exitRedButton
+            // maleGender
             // 
-            this.exitRedButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.exitRedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitRedButton.Location = new System.Drawing.Point(762, 7);
-            this.exitRedButton.Name = "exitRedButton";
-            this.exitRedButton.Size = new System.Drawing.Size(20, 20);
-            this.exitRedButton.TabIndex = 0;
-            this.exitRedButton.UseVisualStyleBackColor = false;
-            this.exitRedButton.Click += new System.EventHandler(this.exitRedButton_Click);
+            this.maleGender.AutoSize = true;
+            this.maleGender.Font = new System.Drawing.Font("Microsoft YaHei Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maleGender.Location = new System.Drawing.Point(111, 357);
+            this.maleGender.Name = "maleGender";
+            this.maleGender.Size = new System.Drawing.Size(56, 23);
+            this.maleGender.TabIndex = 35;
+            this.maleGender.TabStop = true;
+            this.maleGender.Text = "Male";
+            this.maleGender.UseVisualStyleBackColor = true;
             // 
             // registrationBox
             // 
@@ -421,6 +458,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(796, 422);
+            this.Controls.Add(this.maleGender);
+            this.Controls.Add(this.femaleGender);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.listView8);
             this.Controls.Add(this.listView7);
             this.Controls.Add(this.listView6);
@@ -483,5 +523,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button yellowMinimalizeButton;
         private System.Windows.Forms.Button exitRedButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton femaleGender;
+        private System.Windows.Forms.RadioButton maleGender;
     }
 }

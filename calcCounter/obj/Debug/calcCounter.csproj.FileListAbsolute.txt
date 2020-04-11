@@ -48,3 +48,5 @@ C:\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.csproj.GenerateResou
 C:\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.csproj.CoreCompileInputs.cache
 C:\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.exe
 C:\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.pdb
+C:\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.copyrightsBox.resources
+C:\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.productBox.resources

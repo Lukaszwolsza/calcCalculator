@@ -39,6 +39,15 @@ namespace calcCounter
         private void registerApplyButton_Click(object sender, EventArgs e)
         {
             //users user = new users();
+            string userGender;
+            if (femaleGender.Checked)
+            {
+                userGender = "Female";
+            }
+            else
+            {
+                userGender = "Male";
+            }
 
             string userLogin = getUserLogin();
             string userPassword = getUserPassword();
@@ -49,14 +58,15 @@ namespace calcCounter
             int userWeight = Convert.ToInt32(userWeightInput.Text);
             int userHeight = Convert.ToInt32(userHeightInput.Text);
 
-            if(userLogin == "" && userPassword == "" && userName == "" && userLastName == "" && userAge < 0 && userEmail == "" && userWeight < 0 && userHeight < 0)
-            {
-                MessageBox.Show("All fields must be completed ! ");
-            }
+            
+            //if(userLogin == "" && userPassword == "" && userName == "" && userLastName == "" && userAge < 0 && userEmail == "" && userWeight < 0 && userHeight < 0)
+            //{
+            //    MessageBox.Show("All fields must be completed ! ");
+            //}
 
             userService services = new userService();
-            services.addNewUserToList(userLogin, userPassword, userName, userLastName, userAge, userEmail, userHeight, userWeight);
-
+            services.addNewUserToList(userLogin, userPassword, userName, userLastName, userAge, userEmail, userWeight, userHeight, userGender);
+            
             MessageBox.Show("You've been added " + userLogin + " !");
             
                 

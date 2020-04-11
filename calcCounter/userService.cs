@@ -10,12 +10,17 @@ namespace calcCounter
     public class userService
     {
         static List<User> usersInBase = new List<User>();
-        
-        public void addNewUserToList(string login, string password, string username, string lastname, int age, string email, int weight, int height)
+        //public void defaultAdmin()
+        //{
+        //    User admin = new User("adm", "adm", "admin", "admin", 32, "adm@adm.pl", 80, 180, "Male");
+        //    usersInBase.Add(admin);
+        //}
+
+        public void addNewUserToList(string login, string password, string username, string lastname, int age, string email, int weight, int height, string gender)
         {
-            User user = new User(login, password, username, lastname, age, email, weight, height);
-            User nowy = new User("admin", "admin", "test", "test", 30 , "test", 100, 190);
-            usersInBase.Add(nowy);
+            User user = new User(login, password, username, lastname, age, email, weight, height, gender);
+            //User nowy = new User("admin", "admin", "test", "test", 30 , "test", 100, 190);
+            //usersInBase.Add(nowy);
             usersInBase.Add(user);
         }
         
@@ -56,11 +61,57 @@ namespace calcCounter
             int age = foundUser.userAge;
             int weight = foundUser.userWeight;
             int height = foundUser.userHeight;
-            
+            string gender = foundUser.userGender;
+
             //accountInfo acntinf = new accountInfo();
             //acntinf.completeAllData(name,lastname,email,age,weight,height);
 
         }
 
+        
+
+        public string userGreetingAndName(string login)
+        {
+            var foundUser = usersInBase.Find(user => user.userLogin == login);
+            string search = foundUser.userName;
+            return search;
+        }
+
+        public string userLastName(string login)
+        {
+            var foundUser = usersInBase.Find(user => user.userLogin == login);
+            string search = foundUser.userLastName;
+            return search;
+        }
+        public string userEmail(string login)
+        {
+            var foundUser = usersInBase.Find(user => user.userLogin == login);
+            string search = foundUser.userEmail;
+            return search;
+        }
+        public int userAge(string login)
+        {
+            var foundUser = usersInBase.Find(user => user.userLogin == login);
+            int search = foundUser.userAge;
+            return search;
+        }
+        public int userWeight(string login)
+        {
+            var foundUser = usersInBase.Find(user => user.userLogin == login);
+            int search = foundUser.userWeight;
+            return search;
+        }
+        public int userHeight(string login)
+        {
+            var foundUser = usersInBase.Find(user => user.userLogin == login);
+            int search = foundUser.userHeight;
+            return search;
+        }
+        public string userGender(string login)
+        {
+            var foundUser = usersInBase.Find(user => user.userLogin == login);
+            string search = foundUser.userGender;
+            return search;
+        }
     }
 }

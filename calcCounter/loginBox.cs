@@ -15,7 +15,9 @@ namespace calcCounter
     {
         public loginBox()
         {
-            InitializeComponent();         
+            InitializeComponent();
+            //userService usrservice = new userService();
+            //usrservice.defaultAdmin();
         }
 
         public static string userLogin;
@@ -26,7 +28,8 @@ namespace calcCounter
             set { userLogin = value; }
         }
 
-
+        public delegate string getUserLoginD();
+        public delegate string getUserPasswordD();
 
         public string getUserLogin()
         {
@@ -38,11 +41,16 @@ namespace calcCounter
         }
         private void applyLoginButton_Click(object sender, EventArgs e)
         {
+            getUserLoginD getuserlog = getUserLogin;
+            getUserPasswordD getuserpass = getUserPassword;
+
             userService userserv = new userService();
             userLoginDisplay = getUserLogin();
 
-            string loginInfo = getUserLogin();
-            string passwordInfo = getUserPassword();
+
+            string loginInfo = getuserlog();
+            string passwordInfo = getuserpass();
+
             bool isLogged;
 
             isLogged = userserv.userAuthentication(loginInfo, passwordInfo);

@@ -53,6 +53,12 @@
       <DependentUpon>accountInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnectionToBase.cs" />
+    <Compile Include="copyrightsBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="copyrightsBox.Designer.cs">
+      <DependentUpon>copyrightsBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="maybepotrzebne\ConnectingToDatabase.cs" />
     <Compile Include="maybepotrzebne\kcalCalcDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -65,6 +71,14 @@
     <Compile Include="mainBox.Designer.cs">
       <DependentUpon>mainBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="productBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productBox.Designer.cs">
+      <DependentUpon>productBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productService.cs" />
     <Compile Include="registrationBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,11 +98,17 @@
     <EmbeddedResource Include="accountInfo.resx">
       <DependentUpon>accountInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="copyrightsBox.resx">
+      <DependentUpon>copyrightsBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginBox.resx">
       <DependentUpon>loginBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainBox.resx">
       <DependentUpon>mainBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productBox.resx">
+      <DependentUpon>productBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

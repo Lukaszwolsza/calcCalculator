@@ -16,9 +16,11 @@ namespace calcCounter
         public string userEmail { get; private set; }
         public int userWeight { get; private set; }
         public int userHeight { get; private set; }
+        public string userGender { get; private set; }
+
         public int ID { get; private set; } = 0;
 
-        public User(string userlogin, string userpassword, string username, string userlastname, int userage, string useremail, int userweight, int userheight)
+        public User(string userlogin, string userpassword, string username, string userlastname, int userage, string useremail, int userweight, int userheight, string usergender)
         {
             ID++;
             setUserLogin(userlogin);
@@ -29,6 +31,7 @@ namespace calcCounter
             setUserEmail(useremail);
             setUserWeight(userweight);
             setUserHeight(userheight);
+            setUserGender(usergender);
         }
         public User() { }
         public void setUserLogin(string userlogin)
@@ -112,6 +115,10 @@ namespace calcCounter
             //else { userheight = userHeight; }
         }
         
+        public void setUserGender(string usergender)
+        {
+            this.userGender = usergender;
+        }
         ~User() { }
     }
 }
