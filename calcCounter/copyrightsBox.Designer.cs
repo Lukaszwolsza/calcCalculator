@@ -39,8 +39,9 @@
             this.loginBoxExitButton.FlatAppearance.BorderSize = 0;
             this.loginBoxExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.loginBoxExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginBoxExitButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.loginBoxExitButton.Location = new System.Drawing.Point(515, 361);
+            this.loginBoxExitButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.loginBoxExitButton.ForeColor = System.Drawing.Color.Black;
+            this.loginBoxExitButton.Location = new System.Drawing.Point(694, 361);
             this.loginBoxExitButton.Name = "loginBoxExitButton";
             this.loginBoxExitButton.Size = new System.Drawing.Size(73, 27);
             this.loginBoxExitButton.TabIndex = 8;
@@ -54,7 +55,7 @@
             this.returnMainboxButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.returnMainboxButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.returnMainboxButton.ForeColor = System.Drawing.Color.White;
-            this.returnMainboxButton.Location = new System.Drawing.Point(471, 291);
+            this.returnMainboxButton.Location = new System.Drawing.Point(650, 291);
             this.returnMainboxButton.Name = "returnMainboxButton";
             this.returnMainboxButton.Size = new System.Drawing.Size(117, 55);
             this.returnMainboxButton.TabIndex = 15;
@@ -66,7 +67,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(779, 400);
             this.Controls.Add(this.returnMainboxButton);
             this.Controls.Add(this.loginBoxExitButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
