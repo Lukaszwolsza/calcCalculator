@@ -107,7 +107,7 @@
             // 
             this.userHeightInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userHeightInput.Font = new System.Drawing.Font("Microsoft YaHei Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.userHeightInput.Location = new System.Drawing.Point(405, 279);
+            this.userHeightInput.Location = new System.Drawing.Point(408, 279);
             this.userHeightInput.Name = "userHeightInput";
             this.userHeightInput.Size = new System.Drawing.Size(282, 18);
             this.userHeightInput.TabIndex = 6;

@@ -90,6 +90,8 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(746, 40);
             this.panel1.TabIndex = 14;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // yellowMinimalizeButton
             // 
@@ -100,6 +102,7 @@
             this.yellowMinimalizeButton.Size = new System.Drawing.Size(20, 20);
             this.yellowMinimalizeButton.TabIndex = 15;
             this.yellowMinimalizeButton.UseVisualStyleBackColor = false;
+            this.yellowMinimalizeButton.Click += new System.EventHandler(this.yellowMinimalizeButton_Click);
             // 
             // helloTextLabel
             // 
@@ -121,6 +124,7 @@
             this.exitRedButton.Size = new System.Drawing.Size(20, 20);
             this.exitRedButton.TabIndex = 14;
             this.exitRedButton.UseVisualStyleBackColor = false;
+            this.exitRedButton.Click += new System.EventHandler(this.exitRedButton_Click);
             // 
             // textBox1
             // 

@@ -75,6 +75,21 @@ namespace calcCounter
             maxProtein.Text = maxP.ToString() + " g";
             maxFat.Text = maxT.ToString() + " g";
             maxCarbs.Text = maxC.ToString() + " g";
+
+
+            // MEALS conf //
+
+            //string breakfast = breakfastLabel.Text;
+            //string IIbreakfast = IIbreakbastLabel.Text;
+            //string dinner = dinnerLabel.Text;
+            //string snack = snackLabel.Text;
+            //string supper = supperLabel.Text;
+
+            breakfastLabel.Text = "Owsiana";
+            IIbreakbastLabel.Text = "Skyr naturalny, coffee";
+            dinnerLabel.Text = "Kutak, rice";
+            snackLabel.Text = "Apple, milk";
+            supperLabel.Text = "Eggs, bread, butter";
         }
 
         private void yellowMinimalizeButton_Click(object sender, EventArgs e)
@@ -113,6 +128,11 @@ namespace calcCounter
             this.Hide();
             productBox prod = new productBox();
             prod.Show();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
