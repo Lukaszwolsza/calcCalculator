@@ -33,5 +33,15 @@ namespace calcCounter.Properties {
                 return ((string)(this["kcalCalcConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;Initial Catalog=FatToFit;Integrated Security=True")]
+        public string FatToFitConnectionString {
+            get {
+                return ((string)(this["FatToFitConnectionString"]));
+            }
+        }
     }
 }

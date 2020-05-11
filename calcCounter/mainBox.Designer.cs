@@ -59,71 +59,71 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.copyrightsButton = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label47 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.breakfastLabel = new System.Windows.Forms.Label();
-            this.IIbreakbastLabel = new System.Windows.Forms.Label();
-            this.dinnerLabel = new System.Windows.Forms.Label();
-            this.snackLabel = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
             this.supperLabel = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.snackLabel = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.dinnerLabel = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.IIbreakbastLabel = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.breakfastLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainFormExitButton
@@ -256,6 +256,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(878, 40);
             this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -437,11 +438,12 @@
             // 
             this.dateLabel.AutoSize = true;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateLabel.Location = new System.Drawing.Point(23, 8);
+            this.dateLabel.Location = new System.Drawing.Point(13, 8);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(52, 25);
             this.dateLabel.TabIndex = 28;
             this.dateLabel.Text = "Date";
+            this.dateLabel.Click += new System.EventHandler(this.dateLabel_Click);
             // 
             // panel4
             // 
@@ -449,7 +451,7 @@
             this.panel4.Controls.Add(this.dateLabel);
             this.panel4.Location = new System.Drawing.Point(12, 46);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(130, 43);
+            this.panel4.Size = new System.Drawing.Size(231, 43);
             this.panel4.TabIndex = 29;
             // 
             // copyrightsButton
@@ -485,77 +487,59 @@
             this.panel5.Size = new System.Drawing.Size(613, 447);
             this.panel5.TabIndex = 31;
             // 
-            // panel6
+            // label17
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label26);
-            this.panel6.Controls.Add(this.label27);
-            this.panel6.Controls.Add(this.label28);
-            this.panel6.Controls.Add(this.label25);
-            this.panel6.Controls.Add(this.label24);
-            this.panel6.Controls.Add(this.label23);
-            this.panel6.Controls.Add(this.panel16);
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Controls.Add(this.breakfastLabel);
-            this.panel6.Location = new System.Drawing.Point(89, 14);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(513, 69);
-            this.panel6.TabIndex = 0;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(30, 375);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(57, 19);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "Supper";
             // 
-            // panel7
+            // label16
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label29);
-            this.panel7.Controls.Add(this.panel17);
-            this.panel7.Controls.Add(this.button2);
-            this.panel7.Controls.Add(this.label30);
-            this.panel7.Controls.Add(this.IIbreakbastLabel);
-            this.panel7.Controls.Add(this.label32);
-            this.panel7.Controls.Add(this.label31);
-            this.panel7.Controls.Add(this.label34);
-            this.panel7.Controls.Add(this.label33);
-            this.panel7.Location = new System.Drawing.Point(89, 98);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(513, 69);
-            this.panel7.TabIndex = 1;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(39, 288);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 19);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Snack";
             // 
-            // panel8
+            // label13
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label35);
-            this.panel8.Controls.Add(this.panel18);
-            this.panel8.Controls.Add(this.label36);
-            this.panel8.Controls.Add(this.button3);
-            this.panel8.Controls.Add(this.label37);
-            this.panel8.Controls.Add(this.label38);
-            this.panel8.Controls.Add(this.dinnerLabel);
-            this.panel8.Controls.Add(this.label39);
-            this.panel8.Controls.Add(this.label40);
-            this.panel8.Location = new System.Drawing.Point(89, 182);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(513, 69);
-            this.panel8.TabIndex = 1;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(34, 205);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(53, 19);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Dinner";
             // 
-            // panel9
+            // label10
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label41);
-            this.panel9.Controls.Add(this.panel19);
-            this.panel9.Controls.Add(this.label42);
-            this.panel9.Controls.Add(this.button4);
-            this.panel9.Controls.Add(this.label43);
-            this.panel9.Controls.Add(this.label44);
-            this.panel9.Controls.Add(this.snackLabel);
-            this.panel9.Controls.Add(this.label45);
-            this.panel9.Controls.Add(this.label46);
-            this.panel9.Location = new System.Drawing.Point(89, 265);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(513, 69);
-            this.panel9.TabIndex = 1;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(3, 123);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 19);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "II Breakfast";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(15, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 19);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Breakfast";
             // 
             // panel10
             // 
@@ -575,115 +559,35 @@
             this.panel10.Size = new System.Drawing.Size(513, 69);
             this.panel10.TabIndex = 1;
             // 
-            // label7
+            // label47
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(15, 40);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 19);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Breakfast";
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label47.ForeColor = System.Drawing.Color.White;
+            this.label47.Location = new System.Drawing.Point(365, 37);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(20, 22);
+            this.label47.TabIndex = 36;
+            this.label47.Text = "0";
             // 
-            // label10
+            // panel20
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(3, 123);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 19);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "II Breakfast";
+            this.panel20.BackColor = System.Drawing.Color.Black;
+            this.panel20.Location = new System.Drawing.Point(22, 41);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(270, 1);
+            this.panel20.TabIndex = 3;
             // 
-            // label13
+            // label48
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(34, 205);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 19);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Dinner";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(39, 288);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 19);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Snack";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(30, 375);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(57, 19);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "Supper";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(457, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(457, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(457, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(457, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Add";
-            this.button4.UseVisualStyleBackColor = false;
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label48.ForeColor = System.Drawing.Color.White;
+            this.label48.Location = new System.Drawing.Point(412, 37);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(20, 22);
+            this.label48.TabIndex = 35;
+            this.label48.Text = "0";
             // 
             // button5
             // 
@@ -698,93 +602,29 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Add";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // panel16
+            // label49
             // 
-            this.panel16.BackColor = System.Drawing.Color.Black;
-            this.panel16.ForeColor = System.Drawing.Color.Black;
-            this.panel16.Location = new System.Drawing.Point(22, 43);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(270, 1);
-            this.panel16.TabIndex = 2;
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label49.ForeColor = System.Drawing.Color.White;
+            this.label49.Location = new System.Drawing.Point(363, 9);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(29, 22);
+            this.label49.TabIndex = 33;
+            this.label49.Text = "F :";
             // 
-            // panel17
+            // label50
             // 
-            this.panel17.BackColor = System.Drawing.Color.Black;
-            this.panel17.ForeColor = System.Drawing.Color.Black;
-            this.panel17.Location = new System.Drawing.Point(22, 42);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(270, 1);
-            this.panel17.TabIndex = 3;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.Black;
-            this.panel18.ForeColor = System.Drawing.Color.White;
-            this.panel18.Location = new System.Drawing.Point(22, 40);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(270, 1);
-            this.panel18.TabIndex = 3;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.Black;
-            this.panel19.Location = new System.Drawing.Point(22, 40);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(270, 1);
-            this.panel19.TabIndex = 3;
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.Black;
-            this.panel20.Location = new System.Drawing.Point(22, 41);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(270, 1);
-            this.panel20.TabIndex = 3;
-            // 
-            // breakfastLabel
-            // 
-            this.breakfastLabel.AutoSize = true;
-            this.breakfastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.breakfastLabel.ForeColor = System.Drawing.Color.White;
-            this.breakfastLabel.Location = new System.Drawing.Point(20, 25);
-            this.breakfastLabel.Name = "breakfastLabel";
-            this.breakfastLabel.Size = new System.Drawing.Size(20, 20);
-            this.breakfastLabel.TabIndex = 6;
-            this.breakfastLabel.Text = "A";
-            // 
-            // IIbreakbastLabel
-            // 
-            this.IIbreakbastLabel.AutoSize = true;
-            this.IIbreakbastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.IIbreakbastLabel.ForeColor = System.Drawing.Color.White;
-            this.IIbreakbastLabel.Location = new System.Drawing.Point(20, 25);
-            this.IIbreakbastLabel.Name = "IIbreakbastLabel";
-            this.IIbreakbastLabel.Size = new System.Drawing.Size(20, 20);
-            this.IIbreakbastLabel.TabIndex = 7;
-            this.IIbreakbastLabel.Text = "B";
-            // 
-            // dinnerLabel
-            // 
-            this.dinnerLabel.AutoSize = true;
-            this.dinnerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dinnerLabel.ForeColor = System.Drawing.Color.White;
-            this.dinnerLabel.Location = new System.Drawing.Point(20, 23);
-            this.dinnerLabel.Name = "dinnerLabel";
-            this.dinnerLabel.Size = new System.Drawing.Size(20, 20);
-            this.dinnerLabel.TabIndex = 8;
-            this.dinnerLabel.Text = "C";
-            // 
-            // snackLabel
-            // 
-            this.snackLabel.AutoSize = true;
-            this.snackLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.snackLabel.ForeColor = System.Drawing.Color.White;
-            this.snackLabel.Location = new System.Drawing.Point(20, 23);
-            this.snackLabel.Name = "snackLabel";
-            this.snackLabel.Size = new System.Drawing.Size(21, 20);
-            this.snackLabel.TabIndex = 9;
-            this.snackLabel.Text = "D";
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label50.ForeColor = System.Drawing.Color.White;
+            this.label50.Location = new System.Drawing.Point(318, 37);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(20, 22);
+            this.label50.TabIndex = 34;
+            this.label50.Text = "0";
             // 
             // supperLabel
             // 
@@ -797,38 +637,401 @@
             this.supperLabel.TabIndex = 10;
             this.supperLabel.Text = "E";
             // 
-            // label23
+            // label51
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(316, 10);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(31, 22);
-            this.label23.TabIndex = 7;
-            this.label23.Text = "P :";
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label51.ForeColor = System.Drawing.Color.White;
+            this.label51.Location = new System.Drawing.Point(316, 9);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(31, 22);
+            this.label51.TabIndex = 31;
+            this.label51.Text = "P :";
             // 
-            // label24
+            // label52
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(410, 10);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(31, 22);
-            this.label24.TabIndex = 8;
-            this.label24.Text = "C :";
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label52.ForeColor = System.Drawing.Color.White;
+            this.label52.Location = new System.Drawing.Point(410, 9);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(31, 22);
+            this.label52.TabIndex = 32;
+            this.label52.Text = "C :";
             // 
-            // label25
+            // panel9
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(363, 10);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(29, 22);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "F :";
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label41);
+            this.panel9.Controls.Add(this.panel19);
+            this.panel9.Controls.Add(this.label42);
+            this.panel9.Controls.Add(this.button4);
+            this.panel9.Controls.Add(this.label43);
+            this.panel9.Controls.Add(this.label44);
+            this.panel9.Controls.Add(this.snackLabel);
+            this.panel9.Controls.Add(this.label45);
+            this.panel9.Controls.Add(this.label46);
+            this.panel9.Location = new System.Drawing.Point(89, 265);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(513, 69);
+            this.panel9.TabIndex = 1;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(365, 38);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(20, 22);
+            this.label41.TabIndex = 30;
+            this.label41.Text = "0";
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.Black;
+            this.panel19.Location = new System.Drawing.Point(22, 40);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(270, 1);
+            this.panel19.TabIndex = 3;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.Location = new System.Drawing.Point(412, 38);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(20, 22);
+            this.label42.TabIndex = 29;
+            this.label42.Text = "0";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(457, 13);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(40, 40);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Add";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label43.ForeColor = System.Drawing.Color.White;
+            this.label43.Location = new System.Drawing.Point(363, 10);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(29, 22);
+            this.label43.TabIndex = 27;
+            this.label43.Text = "F :";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.Location = new System.Drawing.Point(318, 38);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(20, 22);
+            this.label44.TabIndex = 28;
+            this.label44.Text = "0";
+            // 
+            // snackLabel
+            // 
+            this.snackLabel.AutoSize = true;
+            this.snackLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.snackLabel.ForeColor = System.Drawing.Color.White;
+            this.snackLabel.Location = new System.Drawing.Point(20, 23);
+            this.snackLabel.Name = "snackLabel";
+            this.snackLabel.Size = new System.Drawing.Size(21, 20);
+            this.snackLabel.TabIndex = 9;
+            this.snackLabel.Text = "D";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(316, 10);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(31, 22);
+            this.label45.TabIndex = 25;
+            this.label45.Text = "P :";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(410, 10);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(31, 22);
+            this.label46.TabIndex = 26;
+            this.label46.Text = "C :";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.label35);
+            this.panel8.Controls.Add(this.panel18);
+            this.panel8.Controls.Add(this.label36);
+            this.panel8.Controls.Add(this.button3);
+            this.panel8.Controls.Add(this.label37);
+            this.panel8.Controls.Add(this.label38);
+            this.panel8.Controls.Add(this.dinnerLabel);
+            this.panel8.Controls.Add(this.label39);
+            this.panel8.Controls.Add(this.label40);
+            this.panel8.Location = new System.Drawing.Point(89, 182);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(513, 69);
+            this.panel8.TabIndex = 1;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(365, 38);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(20, 22);
+            this.label35.TabIndex = 24;
+            this.label35.Text = "0";
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.Black;
+            this.panel18.ForeColor = System.Drawing.Color.White;
+            this.panel18.Location = new System.Drawing.Point(22, 40);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(270, 1);
+            this.panel18.TabIndex = 3;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(412, 38);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(20, 22);
+            this.label36.TabIndex = 23;
+            this.label36.Text = "0";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(457, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(40, 40);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(363, 10);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(29, 22);
+            this.label37.TabIndex = 21;
+            this.label37.Text = "F :";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(318, 38);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(20, 22);
+            this.label38.TabIndex = 22;
+            this.label38.Text = "0";
+            // 
+            // dinnerLabel
+            // 
+            this.dinnerLabel.AutoSize = true;
+            this.dinnerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dinnerLabel.ForeColor = System.Drawing.Color.White;
+            this.dinnerLabel.Location = new System.Drawing.Point(20, 23);
+            this.dinnerLabel.Name = "dinnerLabel";
+            this.dinnerLabel.Size = new System.Drawing.Size(20, 20);
+            this.dinnerLabel.TabIndex = 8;
+            this.dinnerLabel.Text = "C";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(316, 10);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(31, 22);
+            this.label39.TabIndex = 19;
+            this.label39.Text = "P :";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(410, 10);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(31, 22);
+            this.label40.TabIndex = 20;
+            this.label40.Text = "C :";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label29);
+            this.panel7.Controls.Add(this.panel17);
+            this.panel7.Controls.Add(this.button2);
+            this.panel7.Controls.Add(this.label30);
+            this.panel7.Controls.Add(this.IIbreakbastLabel);
+            this.panel7.Controls.Add(this.label32);
+            this.panel7.Controls.Add(this.label31);
+            this.panel7.Controls.Add(this.label34);
+            this.panel7.Controls.Add(this.label33);
+            this.panel7.Location = new System.Drawing.Point(89, 98);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(513, 69);
+            this.panel7.TabIndex = 1;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(365, 37);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(20, 22);
+            this.label29.TabIndex = 18;
+            this.label29.Text = "0";
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.Black;
+            this.panel17.ForeColor = System.Drawing.Color.Black;
+            this.panel17.Location = new System.Drawing.Point(22, 42);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(270, 1);
+            this.panel17.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(457, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 40);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(412, 37);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(20, 22);
+            this.label30.TabIndex = 17;
+            this.label30.Text = "0";
+            // 
+            // IIbreakbastLabel
+            // 
+            this.IIbreakbastLabel.AutoSize = true;
+            this.IIbreakbastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.IIbreakbastLabel.ForeColor = System.Drawing.Color.White;
+            this.IIbreakbastLabel.Location = new System.Drawing.Point(20, 25);
+            this.IIbreakbastLabel.Name = "IIbreakbastLabel";
+            this.IIbreakbastLabel.Size = new System.Drawing.Size(20, 20);
+            this.IIbreakbastLabel.TabIndex = 7;
+            this.IIbreakbastLabel.Text = "B";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(363, 9);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(29, 22);
+            this.label32.TabIndex = 15;
+            this.label32.Text = "F :";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(318, 37);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(20, 22);
+            this.label31.TabIndex = 16;
+            this.label31.Text = "0";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(316, 9);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(31, 22);
+            this.label34.TabIndex = 13;
+            this.label34.Text = "P :";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(410, 9);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(31, 22);
+            this.label33.TabIndex = 14;
+            this.label33.Text = "C :";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label26);
+            this.panel6.Controls.Add(this.label27);
+            this.panel6.Controls.Add(this.label28);
+            this.panel6.Controls.Add(this.label25);
+            this.panel6.Controls.Add(this.label24);
+            this.panel6.Controls.Add(this.label23);
+            this.panel6.Controls.Add(this.panel16);
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Controls.Add(this.breakfastLabel);
+            this.panel6.Location = new System.Drawing.Point(89, 14);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(513, 69);
+            this.panel6.TabIndex = 0;
             // 
             // label26
             // 
@@ -863,269 +1066,73 @@
             this.label28.TabIndex = 10;
             this.label28.Text = "0";
             // 
-            // label29
+            // label25
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(365, 37);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(20, 22);
-            this.label29.TabIndex = 18;
-            this.label29.Text = "0";
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(363, 10);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(29, 22);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "F :";
             // 
-            // label30
+            // label24
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(412, 37);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(20, 22);
-            this.label30.TabIndex = 17;
-            this.label30.Text = "0";
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(410, 10);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(31, 22);
+            this.label24.TabIndex = 8;
+            this.label24.Text = "C :";
             // 
-            // label31
+            // label23
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(318, 37);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(20, 22);
-            this.label31.TabIndex = 16;
-            this.label31.Text = "0";
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(316, 10);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(31, 22);
+            this.label23.TabIndex = 7;
+            this.label23.Text = "P :";
             // 
-            // label32
+            // panel16
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(363, 9);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(29, 22);
-            this.label32.TabIndex = 15;
-            this.label32.Text = "F :";
+            this.panel16.BackColor = System.Drawing.Color.Black;
+            this.panel16.ForeColor = System.Drawing.Color.Black;
+            this.panel16.Location = new System.Drawing.Point(22, 43);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(270, 1);
+            this.panel16.TabIndex = 2;
             // 
-            // label33
+            // button1
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(410, 9);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(31, 22);
-            this.label33.TabIndex = 14;
-            this.label33.Text = "C :";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(457, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 40);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label34
+            // breakfastLabel
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(316, 9);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(31, 22);
-            this.label34.TabIndex = 13;
-            this.label34.Text = "P :";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(365, 38);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(20, 22);
-            this.label35.TabIndex = 24;
-            this.label35.Text = "0";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(412, 38);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(20, 22);
-            this.label36.TabIndex = 23;
-            this.label36.Text = "0";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(363, 10);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(29, 22);
-            this.label37.TabIndex = 21;
-            this.label37.Text = "F :";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(318, 38);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(20, 22);
-            this.label38.TabIndex = 22;
-            this.label38.Text = "0";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(316, 10);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(31, 22);
-            this.label39.TabIndex = 19;
-            this.label39.Text = "P :";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(410, 10);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(31, 22);
-            this.label40.TabIndex = 20;
-            this.label40.Text = "C :";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(365, 38);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(20, 22);
-            this.label41.TabIndex = 30;
-            this.label41.Text = "0";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label42.ForeColor = System.Drawing.Color.White;
-            this.label42.Location = new System.Drawing.Point(412, 38);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(20, 22);
-            this.label42.TabIndex = 29;
-            this.label42.Text = "0";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label43.ForeColor = System.Drawing.Color.White;
-            this.label43.Location = new System.Drawing.Point(363, 10);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(29, 22);
-            this.label43.TabIndex = 27;
-            this.label43.Text = "F :";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(318, 38);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(20, 22);
-            this.label44.TabIndex = 28;
-            this.label44.Text = "0";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(316, 10);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(31, 22);
-            this.label45.TabIndex = 25;
-            this.label45.Text = "P :";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(410, 10);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(31, 22);
-            this.label46.TabIndex = 26;
-            this.label46.Text = "C :";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label47.ForeColor = System.Drawing.Color.White;
-            this.label47.Location = new System.Drawing.Point(365, 37);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(20, 22);
-            this.label47.TabIndex = 36;
-            this.label47.Text = "0";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Location = new System.Drawing.Point(412, 37);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(20, 22);
-            this.label48.TabIndex = 35;
-            this.label48.Text = "0";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label49.ForeColor = System.Drawing.Color.White;
-            this.label49.Location = new System.Drawing.Point(363, 9);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(29, 22);
-            this.label49.TabIndex = 33;
-            this.label49.Text = "F :";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label50.ForeColor = System.Drawing.Color.White;
-            this.label50.Location = new System.Drawing.Point(318, 37);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(20, 22);
-            this.label50.TabIndex = 34;
-            this.label50.Text = "0";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label51.ForeColor = System.Drawing.Color.White;
-            this.label51.Location = new System.Drawing.Point(316, 9);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(31, 22);
-            this.label51.TabIndex = 31;
-            this.label51.Text = "P :";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label52.ForeColor = System.Drawing.Color.White;
-            this.label52.Location = new System.Drawing.Point(410, 9);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(31, 22);
-            this.label52.TabIndex = 32;
-            this.label52.Text = "C :";
+            this.breakfastLabel.AutoSize = true;
+            this.breakfastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.breakfastLabel.ForeColor = System.Drawing.Color.White;
+            this.breakfastLabel.Location = new System.Drawing.Point(20, 25);
+            this.breakfastLabel.Name = "breakfastLabel";
+            this.breakfastLabel.Size = new System.Drawing.Size(20, 20);
+            this.breakfastLabel.TabIndex = 6;
+            this.breakfastLabel.Text = "A";
             // 
             // mainBox
             // 
@@ -1158,16 +1165,16 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }

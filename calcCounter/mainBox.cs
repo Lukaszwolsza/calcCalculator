@@ -56,25 +56,28 @@ namespace calcCounter
 
             string login = loginBox.userLoginDisplay;
             accountInfo accountinfo = new accountInfo();
-            //double userBMR = accountinfo.getUserBMR(newservice.userAge(login), newservice.userWeight(login), newservice.userHeight(login));
+            //          double userBMR = accountinfo.getUserBMR(newservice.userAge(login), newservice.userWeight(login), newservice.userHeight(login));
 
             double userBMR = accountinfo.getBMR();
 
-            userNickTextLabel.Text = newservice.userGreetingAndName(login) + " ! :)";
-            maxKcalLabel.Text = userBMR.ToString();
+            //userNickTextLabel.Text = newservice.userGreetingAndName(login) + " ! :)";
+           // maxKcalLabel.Text = userBMR.ToString();
 
-            string monthName = DateTime.Now.ToString("MMM", CultureInfo.InvariantCulture);
+            //          string monthName = DateTime.Now.ToString("MMM", CultureInfo.InvariantCulture);
 
-            dateLabel.Text = DateTime.Now.ToString("MM . " + monthName);
+            //         dateLabel.Text += DateTime.Now.ToString(monthName);
 
-            double maxP = Math.Round((0.35 * userBMR) / 4 , 0);
-            double maxT = Math.Round((0.25 * userBMR) / 9 , 0);
-            double maxC = Math.Round((0.4 * userBMR) / 4 , 0);
+            DateTime currentDay = DateTime.Today;
+            dateLabel.Text += " " + currentDay.ToString("d");
+
+            //double maxP = Math.Round((0.35 * userBMR) / 4 , 0);
+            //double maxT = Math.Round((0.25 * userBMR) / 9 , 0);
+            //double maxC = Math.Round((0.4 * userBMR) / 4 , 0);
             
 
-            maxProtein.Text = maxP.ToString() + " g";
-            maxFat.Text = maxT.ToString() + " g";
-            maxCarbs.Text = maxC.ToString() + " g";
+            //maxProtein.Text = maxP.ToString() + " g";
+            //maxFat.Text = maxT.ToString() + " g";
+            //maxCarbs.Text = maxC.ToString() + " g";
 
 
             // MEALS conf //
@@ -85,11 +88,11 @@ namespace calcCounter
             //string snack = snackLabel.Text;
             //string supper = supperLabel.Text;
 
-            breakfastLabel.Text = "Owsiana";
-            IIbreakbastLabel.Text = "Skyr naturalny, coffee";
-            dinnerLabel.Text = "Kutak, rice";
-            snackLabel.Text = "Apple, milk";
-            supperLabel.Text = "Eggs, bread, butter";
+            breakfastLabel.Text = "Nothing";
+            IIbreakbastLabel.Text = "Nothing";
+            dinnerLabel.Text = "Nothing";
+            snackLabel.Text = "Nothing";
+            supperLabel.Text = "Nothing";
         }
 
         private void yellowMinimalizeButton_Click(object sender, EventArgs e)
@@ -131,6 +134,46 @@ namespace calcCounter
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            addProductToMeal newprodtomeal = new addProductToMeal();
+            newprodtomeal.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            addProductToMeal newprodtomeal = new addProductToMeal();
+            newprodtomeal.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            addProductToMeal newprodtomeal = new addProductToMeal();
+            newprodtomeal.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            addProductToMeal newprodtomeal = new addProductToMeal();
+            newprodtomeal.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            addProductToMeal newprodtomeal = new addProductToMeal();
+            newprodtomeal.Show();
+        }
+
+        private void dateLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

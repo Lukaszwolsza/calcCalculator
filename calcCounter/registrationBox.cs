@@ -42,11 +42,11 @@ namespace calcCounter
             string userGender;
             if (femaleGender.Checked)
             {
-                userGender = "Female";
+                userGender = "F";
             }
             else
             {
-                userGender = "Male";
+                userGender = "M";
             }
 
             string userLogin = getUserLogin();
@@ -58,15 +58,18 @@ namespace calcCounter
             int userWeight = Convert.ToInt32(userWeightInput.Text);
             int userHeight = Convert.ToInt32(userHeightInput.Text);
 
-            
+
             //if(userLogin == "" && userPassword == "" && userName == "" && userLastName == "" && userAge < 0 && userEmail == "" && userWeight < 0 && userHeight < 0)
             //{
             //    MessageBox.Show("All fields must be completed ! ");
             //}
 
-            userService services = new userService();
-            services.addNewUserToList(userLogin, userPassword, userName, userLastName, userAge, userEmail, userWeight, userHeight, userGender);
-            
+            //userService services = new userService();
+            //services.addNewUserToList(userLogin, userPassword, userName, userLastName, userAge, userEmail, userWeight, userHeight, userGender);
+
+            connectToBaseUser cntToBase = new connectToBaseUser();
+            cntToBase.addUserToBase(userLogin, userPassword, userName, userLastName, userAge, userEmail, userWeight, userHeight, userGender);
+
             MessageBox.Show("You've been added " + userLogin + " !");
             
                 

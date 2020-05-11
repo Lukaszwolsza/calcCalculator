@@ -10,17 +10,10 @@ namespace calcCounter
     public class userService
     {
         static List<User> usersInBase = new List<User>();
-        //public void defaultAdmin()
-        //{
-        //    User admin = new User("adm", "adm", "admin", "admin", 32, "adm@adm.pl", 80, 180, "Male");
-        //    usersInBase.Add(admin);
-        //}
 
         public void addNewUserToList(string login, string password, string username, string lastname, int age, string email, int weight, int height, string gender)
         {
             User user = new User(login, password, username, lastname, age, email, weight, height, gender);
-            //User nowy = new User("admin", "admin", "test", "test", 30 , "test", 100, 190);
-            //usersInBase.Add(nowy);
             usersInBase.Add(user);
         }
         
