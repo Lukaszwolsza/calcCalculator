@@ -53,10 +53,11 @@ namespace calcCounter
 
             bool isLogged;
 
-            //isLogged = userserv.userAuthentication(loginInfo, passwordInfo);
+            isLogged = userserv.userAuthentication(loginInfo, passwordInfo);
 
-            connectToBaseUser cntToUserBase = new connectToBaseUser();
-            isLogged = cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
+            //BASE CONNECT
+            //connectToBaseUser cntToUserBase = new connectToBaseUser();
+            //isLogged = cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
 
 
             if (isLogged)

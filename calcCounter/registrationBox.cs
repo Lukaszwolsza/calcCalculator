@@ -64,11 +64,12 @@ namespace calcCounter
             //    MessageBox.Show("All fields must be completed ! ");
             //}
 
-            //userService services = new userService();
-            //services.addNewUserToList(userLogin, userPassword, userName, userLastName, userAge, userEmail, userWeight, userHeight, userGender);
+            userService services = new userService();
+            services.addNewUserToList(userLogin, userPassword, userName, userLastName, userAge, userEmail, userWeight, userHeight, userGender);
 
-            connectToBaseUser cntToBase = new connectToBaseUser();
-            cntToBase.addUserToBase(userLogin, userPassword, userName, userLastName, userAge, userEmail, userWeight, userHeight, userGender);
+            //CONNECTION TO BASE
+            //connectToBaseUser cntToBase = new connectToBaseUser();
+            //cntToBase.addUserToBase(userLogin, userPassword, userName, userLastName, userAge, userEmail, userWeight, userHeight, userGender);
 
             MessageBox.Show("You've been added " + userLogin + " !");
             

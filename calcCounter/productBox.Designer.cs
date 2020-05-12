@@ -57,19 +57,19 @@
             this.carbText = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.fatToFitDataSet = new calcCounter.FatToFitDataSet();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fatToFitDataSet = new calcCounter.FatToFitDataSet();
             this.productsTableAdapter = new calcCounter.FatToFitDataSetTableAdapters.productsTableAdapter();
-            this.iDPRODUCTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cALORIESON100GDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROTEINDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARBSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_PRODUCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CALORIES_ON_100G = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PROTEIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CARBS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fatToFitDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fatToFitDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // mainFormExitButton
@@ -357,86 +357,86 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDPRODUCTDataGridViewTextBoxColumn,
-            this.nAMEDataGridViewTextBoxColumn,
-            this.cALORIESON100GDataGridViewTextBoxColumn,
-            this.pROTEINDataGridViewTextBoxColumn,
-            this.fATDataGridViewTextBoxColumn,
-            this.cARBSDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.productsBindingSource;
+            this.ID_PRODUCT,
+            this.NAME,
+            this.CALORIES_ON_100G,
+            this.PROTEIN,
+            this.FAT,
+            this.CARBS});
             this.dataGridView1.Location = new System.Drawing.Point(12, 109);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridView1.Size = new System.Drawing.Size(522, 408);
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // fatToFitDataSet
-            // 
-            this.fatToFitDataSet.DataSetName = "FatToFitDataSet";
-            this.fatToFitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // productsBindingSource
             // 
             this.productsBindingSource.DataMember = "products";
             this.productsBindingSource.DataSource = this.fatToFitDataSet;
             // 
+            // fatToFitDataSet
+            // 
+            this.fatToFitDataSet.DataSetName = "FatToFitDataSet";
+            this.fatToFitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // productsTableAdapter
             // 
             this.productsTableAdapter.ClearBeforeFill = true;
             // 
-            // iDPRODUCTDataGridViewTextBoxColumn
+            // ID_PRODUCT
             // 
-            this.iDPRODUCTDataGridViewTextBoxColumn.DataPropertyName = "ID_PRODUCT";
-            this.iDPRODUCTDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDPRODUCTDataGridViewTextBoxColumn.Name = "iDPRODUCTDataGridViewTextBoxColumn";
-            this.iDPRODUCTDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDPRODUCTDataGridViewTextBoxColumn.Width = 45;
+            this.ID_PRODUCT.DataPropertyName = "ID_PRODUCT";
+            this.ID_PRODUCT.HeaderText = "Prod ID";
+            this.ID_PRODUCT.Name = "ID_PRODUCT";
+            this.ID_PRODUCT.ReadOnly = true;
+            this.ID_PRODUCT.Width = 50;
             // 
-            // nAMEDataGridViewTextBoxColumn
+            // NAME
             // 
-            this.nAMEDataGridViewTextBoxColumn.DataPropertyName = "NAME";
-            this.nAMEDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nAMEDataGridViewTextBoxColumn.Name = "nAMEDataGridViewTextBoxColumn";
-            this.nAMEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nAMEDataGridViewTextBoxColumn.Width = 120;
+            this.NAME.DataPropertyName = "NAME";
+            this.NAME.HeaderText = "Name";
+            this.NAME.Name = "NAME";
+            this.NAME.ReadOnly = true;
+            this.NAME.Width = 120;
             // 
-            // cALORIESON100GDataGridViewTextBoxColumn
+            // CALORIES_ON_100G
             // 
-            this.cALORIESON100GDataGridViewTextBoxColumn.DataPropertyName = "CALORIES_ON_100G";
-            this.cALORIESON100GDataGridViewTextBoxColumn.HeaderText = "Calories";
-            this.cALORIESON100GDataGridViewTextBoxColumn.Name = "cALORIESON100GDataGridViewTextBoxColumn";
-            this.cALORIESON100GDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cALORIESON100GDataGridViewTextBoxColumn.Width = 75;
+            this.CALORIES_ON_100G.DataPropertyName = "CALORIES_ON_100G";
+            this.CALORIES_ON_100G.HeaderText = "Calories";
+            this.CALORIES_ON_100G.Name = "CALORIES_ON_100G";
+            this.CALORIES_ON_100G.ReadOnly = true;
+            this.CALORIES_ON_100G.Width = 75;
             // 
-            // pROTEINDataGridViewTextBoxColumn
+            // PROTEIN
             // 
-            this.pROTEINDataGridViewTextBoxColumn.DataPropertyName = "PROTEIN";
-            this.pROTEINDataGridViewTextBoxColumn.HeaderText = "Protein";
-            this.pROTEINDataGridViewTextBoxColumn.Name = "pROTEINDataGridViewTextBoxColumn";
-            this.pROTEINDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pROTEINDataGridViewTextBoxColumn.Width = 75;
+            this.PROTEIN.DataPropertyName = "PROTEIN";
+            this.PROTEIN.HeaderText = "Protein";
+            this.PROTEIN.Name = "PROTEIN";
+            this.PROTEIN.ReadOnly = true;
+            this.PROTEIN.Width = 75;
             // 
-            // fATDataGridViewTextBoxColumn
+            // FAT
             // 
-            this.fATDataGridViewTextBoxColumn.DataPropertyName = "FAT";
-            this.fATDataGridViewTextBoxColumn.HeaderText = "Fat";
-            this.fATDataGridViewTextBoxColumn.Name = "fATDataGridViewTextBoxColumn";
-            this.fATDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fATDataGridViewTextBoxColumn.Width = 75;
+            this.FAT.DataPropertyName = "FAT";
+            this.FAT.HeaderText = "Fat";
+            this.FAT.Name = "FAT";
+            this.FAT.ReadOnly = true;
+            this.FAT.Width = 75;
             // 
-            // cARBSDataGridViewTextBoxColumn
+            // CARBS
             // 
-            this.cARBSDataGridViewTextBoxColumn.DataPropertyName = "CARBS";
-            this.cARBSDataGridViewTextBoxColumn.HeaderText = "Carbs";
-            this.cARBSDataGridViewTextBoxColumn.Name = "cARBSDataGridViewTextBoxColumn";
-            this.cARBSDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cARBSDataGridViewTextBoxColumn.Width = 75;
+            this.CARBS.DataPropertyName = "CARBS";
+            this.CARBS.HeaderText = "Carbs";
+            this.CARBS.Name = "CARBS";
+            this.CARBS.ReadOnly = true;
+            this.CARBS.Width = 75;
             // 
             // productBox
             // 
@@ -476,8 +476,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fatToFitDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fatToFitDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,11 +515,11 @@
         private FatToFitDataSet fatToFitDataSet;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private FatToFitDataSetTableAdapters.productsTableAdapter productsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDPRODUCTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nAMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cALORIESON100GDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pROTEINDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fATDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARBSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PRODUCT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CALORIES_ON_100G;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PROTEIN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FAT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CARBS;
     }
 }

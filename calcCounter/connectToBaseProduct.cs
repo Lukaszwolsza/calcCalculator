@@ -11,6 +11,8 @@ namespace calcCounter
     class connectToBaseProduct
     {
         
+
+
         public void addProductToBase(string name, double calories, double protein, double fat, double carbs)
         {
             string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
@@ -32,30 +34,44 @@ namespace calcCounter
                 
             }
         }
-
-
-        public void searchingProduct(string prodName)
+        public DataTable displayingProducts()
         {
             string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
             using (var sqlConnection = new SqlConnection(sqlStringConnector))
             {
                 sqlConnection.Open();
 
-                using (var command = new SqlCommand($"SELECT * FROM dbo.products WHERE NAME = '{prodName}'", sqlConnection))
-                {
-                    var result = command.ExecuteNonQuery();
-                }
+                SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products", sqlConnection);
+                DataTable dtbl = new DataTable();
+                sqlDa.Fill(dtbl);
 
-
-                //SqlDataAdapter sqlData = new SqlDataAdapter("INSERT INTO dbo.products (NAME, CALORIES_ON_100G, PROTEIN, FAT, CARBS) VALUES ('Frytki','350','2','30','30')", sqlConnection);
-                //DataTable dttable = new DataTable();
-
-                //sqlData.Fill(dttable);
-
-
+                return dtbl;
             }
         }
-        
+
+        public DataTable searchingProduct(string prodName)
+        {
+            string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
+            using (var sqlConnection = new SqlConnection(sqlStringConnector))
+            {
+                sqlConnection.Open();
+                if (prodName == "")
+                {
+                    SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products", sqlConnection);
+                    DataTable dtbl = new DataTable();
+                    sqlDa.Fill(dtbl);
+                    return dtbl;
+                }
+                else
+                {
+                    SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products WHERE NAME = '{prodName}'", sqlConnection);
+                    DataTable dtbl = new DataTable();
+                    sqlDa.Fill(dtbl);
+                    return dtbl;
+                }
+            }
+        }
+
     }
 
 }

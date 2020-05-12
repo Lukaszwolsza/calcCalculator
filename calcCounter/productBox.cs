@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,35 @@ namespace calcCounter
             InitializeComponent();
         }
 
+        
+
+        //public void searchingProduct(string prodName)
+        //{
+        //    string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
+        //    using (var sqlConnection = new SqlConnection(sqlStringConnector))
+        //    {
+        //        sqlConnection.Open();
+        //        if (prodName == "")
+        //        {
+        //            SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products", sqlConnection);
+        //            DataTable dtbl = new DataTable();
+        //            sqlDa.Fill(dtbl);
+        //            dataGridView1.AutoGenerateColumns = false;
+        //            dataGridView1.DataSource = dtbl;
+        //        }
+        //        else
+        //        {
+        //            SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products WHERE NAME = '{prodName}'", sqlConnection);
+        //            DataTable dtbl = new DataTable();
+        //            sqlDa.Fill(dtbl);
+        //            dataGridView1.AutoGenerateColumns = false;
+        //            dataGridView1.DataSource = dtbl;
+        //        }
+        //    }
+        //}
+
+
+
         public string getSearchingItem()
         {
             return searchedItem.Text;
@@ -25,8 +55,9 @@ namespace calcCounter
         private void button1_Click(object sender, EventArgs e)
         {
             string searchedItem = getSearchingItem();
-            connectToBaseProduct cntToBase = new connectToBaseProduct();
-            cntToBase.searchingProduct(searchedItem);
+            connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = cntToBaseProd.searchingProduct(searchedItem);
         }
 
         private void returnMainboxButton_Click(object sender, EventArgs e)
@@ -100,14 +131,16 @@ namespace calcCounter
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //dataGridView1.DataBind();
+            connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = cntToBaseProd.displayingProducts();
         }
 
         private void productBox_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'fatToFitDataSet.products' table. You can move, or remove it, as needed.
-            this.productsTableAdapter.Fill(this.fatToFitDataSet.products);
-
+            connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = cntToBaseProd.displayingProducts();
         }
     }
 }

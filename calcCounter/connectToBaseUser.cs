@@ -45,7 +45,8 @@ namespace calcCounter
 
             if (dta.Rows.Count == 1)
             {
-                MessageBox.Show("Perfect!");
+                mainBox mainMenuBox = new mainBox();
+                mainMenuBox.Show();
                 isLogged = true;
             }
             else
