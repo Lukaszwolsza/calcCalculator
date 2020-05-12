@@ -22,14 +22,6 @@ namespace calcCounter
                 {
                     var result = command.ExecuteNonQuery();
                 }
-
-
-                //SqlDataAdapter sqlData = new SqlDataAdapter("INSERT INTO dbo.products (NAME, CALORIES_ON_100G, PROTEIN, FAT, CARBS) VALUES ('Frytki','350','2','30','30')", sqlConnection);
-                //DataTable dttable = new DataTable();
-
-                //sqlData.Fill(dttable);
-
-
             }
         }
 
@@ -58,14 +50,14 @@ namespace calcCounter
         }
 
 
-        public string userGreetingAndName(string login)
+        public SqlDataAdapter userGreetingAndName(string login)
         {
             string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
-            string query = "SELECT * FROM dbo.users WHERE LOGIN = '" + login + "'";
+            string query = "SELECT NAME FROM dbo.users WHERE LOGIN = '" + login + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlStringConnector);
-
             
-            return query;
+            
+            return sda;
             //var foundUser = usersInBase.Find(user => user.userLogin == login);
             //string search = foundUser.userName;
             //return search;

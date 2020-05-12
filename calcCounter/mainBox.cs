@@ -16,8 +16,6 @@ namespace calcCounter
         public mainBox()
         {
             InitializeComponent();
-            
-            //userNickTextLabel.Text = userLogin;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -54,18 +52,17 @@ namespace calcCounter
             userService newservice = new userService();
             loginBox loginbox = new loginBox();
 
-            string login = loginBox.userLoginDisplay;
-            accountInfo accountinfo = new accountInfo();
-            //          double userBMR = accountinfo.getUserBMR(newservice.userAge(login), newservice.userWeight(login), newservice.userHeight(login));
-
-            double userBMR = accountinfo.getBMR();
+            //string login = loginBox.userLoginDisplay;
+            //accountInfo accountinfo = new accountInfo();
+            //double userBMR = accountinfo.getUserBMR(newservice.userAge(login), newservice.userWeight(login), newservice.userHeight(login));
+            //double userBMR = accountinfo.getBMR();
 
             //userNickTextLabel.Text = newservice.userGreetingAndName(login) + " ! :)";
-           // maxKcalLabel.Text = userBMR.ToString();
+            // maxKcalLabel.Text = userBMR.ToString();
 
-            //          string monthName = DateTime.Now.ToString("MMM", CultureInfo.InvariantCulture);
+            //string monthName = DateTime.Now.ToString("MMM", CultureInfo.InvariantCulture);
 
-            //         dateLabel.Text += DateTime.Now.ToString(monthName);
+            //dateLabel.Text += DateTime.Now.ToString(monthName);
 
             DateTime currentDay = DateTime.Today;
             dateLabel.Text += " " + currentDay.ToString("d");

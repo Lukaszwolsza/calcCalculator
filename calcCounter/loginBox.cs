@@ -16,9 +16,8 @@ namespace calcCounter
         public loginBox()
         {
             InitializeComponent();
-            //userService usrservice = new userService();
-            //usrservice.defaultAdmin();
         }
+
 
         public static string userLogin;
 
@@ -39,12 +38,19 @@ namespace calcCounter
         {
             return passwordInput.Text;
         }
+
+
+
+
+
         private void applyLoginButton_Click(object sender, EventArgs e)
         {
             getUserLoginD getuserlog = getUserLogin;
             getUserPasswordD getuserpass = getUserPassword;
 
-            userService userserv = new userService();
+
+            // OLD USERSERVICE
+            //userService userserv = new userService();
             userLoginDisplay = getUserLogin();
 
 
@@ -53,11 +59,12 @@ namespace calcCounter
 
             bool isLogged;
 
-            isLogged = userserv.userAuthentication(loginInfo, passwordInfo);
+            // OLD USERSERVICE
+            //isLogged = userserv.userAuthentication(loginInfo, passwordInfo);
 
             //BASE CONNECT
-            //connectToBaseUser cntToUserBase = new connectToBaseUser();
-            //isLogged = cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
+            connectToBaseUser cntToUserBase = new connectToBaseUser();
+            isLogged = cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
 
 
             if (isLogged)

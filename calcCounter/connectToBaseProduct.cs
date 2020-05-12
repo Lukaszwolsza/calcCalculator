@@ -10,9 +10,6 @@ namespace calcCounter
 {
     class connectToBaseProduct
     {
-        
-
-
         public void addProductToBase(string name, double calories, double protein, double fat, double carbs)
         {
             string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
@@ -23,15 +20,7 @@ namespace calcCounter
                 using (var command = new SqlCommand($"INSERT INTO dbo.products (NAME, CALORIES_ON_100G, PROTEIN, FAT, CARBS) VALUES ('{name}','{calories}','{protein}','{fat}','{carbs}')", sqlConnection))
                 {
                     var result = command.ExecuteNonQuery();
-                }
-
-            
-            //SqlDataAdapter sqlData = new SqlDataAdapter("INSERT INTO dbo.products (NAME, CALORIES_ON_100G, PROTEIN, FAT, CARBS) VALUES ('Frytki','350','2','30','30')", sqlConnection);
-                //DataTable dttable = new DataTable();
-
-               //sqlData.Fill(dttable);
-
-                
+                }           
             }
         }
         public DataTable displayingProducts()
@@ -64,13 +53,16 @@ namespace calcCounter
                 }
                 else
                 {
-                    SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products WHERE NAME = '{prodName}'", sqlConnection);
+                    SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products WHERE NAME LIKE '{prodName}%'", sqlConnection);
                     DataTable dtbl = new DataTable();
                     sqlDa.Fill(dtbl);
                     return dtbl;
                 }
             }
         }
+
+       
+
 
     }
 

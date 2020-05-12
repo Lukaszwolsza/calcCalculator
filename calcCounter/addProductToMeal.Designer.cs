@@ -36,7 +36,12 @@
             this.searchedProductInput = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.searchProdButton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CALORIES_ON_100G = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addNewProdBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -113,6 +118,56 @@
             this.searchProdButton.Size = new System.Drawing.Size(30, 30);
             this.searchProdButton.TabIndex = 18;
             this.searchProdButton.UseVisualStyleBackColor = false;
+            this.searchProdButton.Click += new System.EventHandler(this.searchProdButton_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NAME,
+            this.CALORIES_ON_100G});
+            this.dataGridView1.Location = new System.Drawing.Point(16, 113);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.Size = new System.Drawing.Size(261, 208);
+            this.dataGridView1.TabIndex = 19;
+            // 
+            // NAME
+            // 
+            this.NAME.DataPropertyName = "NAME";
+            this.NAME.HeaderText = "Name";
+            this.NAME.Name = "NAME";
+            this.NAME.ReadOnly = true;
+            this.NAME.Width = 120;
+            // 
+            // CALORIES_ON_100G
+            // 
+            this.CALORIES_ON_100G.DataPropertyName = "CALORIES_ON_100G";
+            this.CALORIES_ON_100G.HeaderText = "Calories";
+            this.CALORIES_ON_100G.Name = "CALORIES_ON_100G";
+            this.CALORIES_ON_100G.ReadOnly = true;
+            this.CALORIES_ON_100G.Width = 75;
+            // 
+            // addNewProdBtn
+            // 
+            this.addNewProdBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.addNewProdBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addNewProdBtn.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.addNewProdBtn.ForeColor = System.Drawing.Color.White;
+            this.addNewProdBtn.Location = new System.Drawing.Point(184, 341);
+            this.addNewProdBtn.Margin = new System.Windows.Forms.Padding(1);
+            this.addNewProdBtn.Name = "addNewProdBtn";
+            this.addNewProdBtn.Size = new System.Drawing.Size(135, 44);
+            this.addNewProdBtn.TabIndex = 60;
+            this.addNewProdBtn.Text = "Add product ";
+            this.addNewProdBtn.UseVisualStyleBackColor = false;
+            this.addNewProdBtn.Click += new System.EventHandler(this.addNewProdBtn_Click);
             // 
             // addProductToMeal
             // 
@@ -120,6 +175,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(337, 395);
+            this.Controls.Add(this.addNewProdBtn);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.searchProdButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.searchedProductInput);
@@ -131,6 +188,7 @@
             this.Load += new System.EventHandler(this.addProductToMeal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,5 +203,9 @@
         private System.Windows.Forms.TextBox searchedProductInput;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button searchProdButton;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CALORIES_ON_100G;
+        private System.Windows.Forms.Button addNewProdBtn;
     }
 }

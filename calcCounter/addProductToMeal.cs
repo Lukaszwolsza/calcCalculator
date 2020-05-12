@@ -19,7 +19,9 @@ namespace calcCounter
 
         private void addProductToMeal_Load(object sender, EventArgs e)
         {
-
+            connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = cntToBaseProd.displayingProducts();
         }
 
         private void yellowMinimalizeButton_Click(object sender, EventArgs e)
@@ -45,6 +47,19 @@ namespace calcCounter
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
             }
+        }
+
+        private void searchProdButton_Click(object sender, EventArgs e)
+        {
+            string searchedProd = searchedProductInput.Text;
+            connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = cntToBaseProd.searchingProduct(searchedProd);
+        }
+
+        private void addNewProdBtn_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -17,36 +17,6 @@ namespace calcCounter
         {
             InitializeComponent();
         }
-
-        
-
-        //public void searchingProduct(string prodName)
-        //{
-        //    string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
-        //    using (var sqlConnection = new SqlConnection(sqlStringConnector))
-        //    {
-        //        sqlConnection.Open();
-        //        if (prodName == "")
-        //        {
-        //            SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products", sqlConnection);
-        //            DataTable dtbl = new DataTable();
-        //            sqlDa.Fill(dtbl);
-        //            dataGridView1.AutoGenerateColumns = false;
-        //            dataGridView1.DataSource = dtbl;
-        //        }
-        //        else
-        //        {
-        //            SqlDataAdapter sqlDa = new SqlDataAdapter($"SELECT * FROM dbo.products WHERE NAME = '{prodName}'", sqlConnection);
-        //            DataTable dtbl = new DataTable();
-        //            sqlDa.Fill(dtbl);
-        //            dataGridView1.AutoGenerateColumns = false;
-        //            dataGridView1.DataSource = dtbl;
-        //        }
-        //    }
-        //}
-
-
-
         public string getSearchingItem()
         {
             return searchedItem.Text;
@@ -80,12 +50,12 @@ namespace calcCounter
             double prodFat = Convert.ToDouble(fatText.Text);
             double prodCarbs = Convert.ToDouble(carbText.Text);
 
+            // TASKS on <LIST>
             //productService prodservice = new productService();
-
             //prodservice.addProductToList(prodName, prodCalories, prodProtein, prodFat, prodCarbs);
-
             //MessageBox.Show("You've added " + prodName + " to base ! ");
 
+            // CONNETING TO BASE AND ADDING PROD
             connectToBaseProduct cntToBase = new connectToBaseProduct();
             cntToBase.addProductToBase(prodName, prodCalories, prodProtein, prodFat, prodCarbs);
             MessageBox.Show("You've added " + prodName + " to base ! ");

@@ -44,22 +44,18 @@ namespace calcCounter
             return isLogged;
         }
         
-        public void completingTheInfoAboutUser(string login)
-        {
-            var foundUser = usersInBase.Find(user => user.userLogin == login);
+        //public void completingTheInfoAboutUser(string login)
+        //{
+        //    var foundUser = usersInBase.Find(user => user.userLogin == login);
 
-            string name = foundUser.userLogin;
-            string lastname = foundUser.userLastName;
-            string email = foundUser.userEmail;
-            int age = foundUser.userAge;
-            int weight = foundUser.userWeight;
-            int height = foundUser.userHeight;
-            string gender = foundUser.userGender;
-
-            //accountInfo acntinf = new accountInfo();
-            //acntinf.completeAllData(name,lastname,email,age,weight,height);
-
-        }
+        //    string name = foundUser.userLogin;
+        //    string lastname = foundUser.userLastName;
+        //    string email = foundUser.userEmail;
+        //    int age = foundUser.userAge;
+        //    int weight = foundUser.userWeight;
+        //    int height = foundUser.userHeight;
+        //    string gender = foundUser.userGender;
+        //}
 
         
 
