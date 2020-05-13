@@ -48,29 +48,24 @@ namespace calcCounter
             getUserLoginD getuserlog = getUserLogin;
             getUserPasswordD getuserpass = getUserPassword;
 
-
-            // OLD USERSERVICE
-            //userService userserv = new userService();
-            userLoginDisplay = getUserLogin();
-
+            //userLoginDisplay = getUserLogin();
 
             string loginInfo = getuserlog();
             string passwordInfo = getuserpass();
-
             bool isLogged;
-
-            // OLD USERSERVICE
-            //isLogged = userserv.userAuthentication(loginInfo, passwordInfo);
 
             //BASE CONNECT
             connectToBaseUser cntToUserBase = new connectToBaseUser();
-            isLogged = cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
+            /*isLogged =*/ cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
 
+            // OLD USERSERVICE
+            //userService userserv = new userService();
+            //isLogged = userserv.userAuthentication(loginInfo, passwordInfo);
 
-            if (isLogged)
-            {
-                this.Close();
-            }          
+            //if (isLogged)
+            //{
+            //    this.Close();
+            //}
         }
         private void registryNewUserButton_Click(object sender, EventArgs e)
         {

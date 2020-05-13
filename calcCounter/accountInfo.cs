@@ -20,7 +20,8 @@ namespace calcCounter
 
             string login = loginBox.userLoginDisplay;
 
-            newservice.completingTheInfoAboutUser(login);
+            // LIST OLD
+            //newservice.completingTheInfoAboutUser(login);
         }
 
         //public double getUserBMR(int age, int weight, int height)

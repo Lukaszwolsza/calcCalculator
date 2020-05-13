@@ -27,7 +27,7 @@ namespace calcCounter
 
         public bool userAuthenticationInBase(string login, string password)
         {
-            bool isLogged = false;
+            bool isLogged;
             string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
             string query = "SELECT * FROM dbo.users WHERE LOGIN = '" + login + "' AND PASSWORD = '" + password + "'";
 
@@ -37,6 +37,7 @@ namespace calcCounter
 
             if (dta.Rows.Count == 1)
             {
+                MessageBox.Show("You're logged !");
                 mainBox mainMenuBox = new mainBox();
                 mainMenuBox.Show();
                 isLogged = true;
@@ -50,14 +51,27 @@ namespace calcCounter
         }
 
 
-        public SqlDataAdapter userGreetingAndName(string login)
+        public string userGreetingAndName(string login)
         {
-            string sqlStringConnector = "Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;";
-            string query = "SELECT NAME FROM dbo.users WHERE LOGIN = '" + login + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, sqlStringConnector);
-            
-            
-            return sda;
+            string userLogin;
+            string errorResult = "Nothing find";
+            using (var sqlStringConnector = new SqlConnection("Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;"))
+            {
+                sqlStringConnector.Open();
+                using (var query = new SqlCommand("SELECT NAME FROM dbo.users WHERE LOGIN = '" + login + "'", sqlStringConnector))
+                {
+                    using (var reader = query.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            userLogin = reader["LOGIN"] as string;
+                            return userLogin;
+                        }
+                    }
+                }
+            }
+            return errorResult;
+
             //var foundUser = usersInBase.Find(user => user.userLogin == login);
             //string search = foundUser.userName;
             //return search;
