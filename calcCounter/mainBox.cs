@@ -49,15 +49,16 @@ namespace calcCounter
 
         private void mainBox_Load(object sender, EventArgs e)
         {
-            userService newservice = new userService();
+            //userService newservice = new userService();
+            connectToBaseUser cntToUserBase = new connectToBaseUser();
             loginBox loginbox = new loginBox();
 
-            //string login = loginBox.userLoginDisplay;
+            string login = loginBox.userLoginDisplay;
             //accountInfo accountinfo = new accountInfo();
             //double userBMR = accountinfo.getUserBMR(newservice.userAge(login), newservice.userWeight(login), newservice.userHeight(login));
             //double userBMR = accountinfo.getBMR();
 
-            //userNickTextLabel.Text = newservice.userGreetingAndName(login) + " ! :)";
+            userNickTextLabel.Text = cntToUserBase.userGreetingAndName(login) + " ! :)";
             // maxKcalLabel.Text = userBMR.ToString();
 
             //string monthName = DateTime.Now.ToString("MMM", CultureInfo.InvariantCulture);

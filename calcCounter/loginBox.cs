@@ -56,7 +56,7 @@ namespace calcCounter
 
             //BASE CONNECT
             connectToBaseUser cntToUserBase = new connectToBaseUser();
-            /*isLogged =*/ cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
+            isLogged = cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
 
             // OLD USERSERVICE
             //userService userserv = new userService();

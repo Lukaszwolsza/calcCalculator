@@ -54,7 +54,7 @@ namespace calcCounter
         public string userGreetingAndName(string login)
         {
             string userLogin;
-            string errorResult = "Nothing find";
+            //string errorResult = "Nothing find";
             using (var sqlStringConnector = new SqlConnection("Server =.\\SQLEXPRESS; Database = FatToFit; Trusted_Connection = True;"))
             {
                 sqlStringConnector.Open();
@@ -64,13 +64,12 @@ namespace calcCounter
                     {
                         while (reader.Read())
                         {
-                            userLogin = reader["LOGIN"] as string;
-                            return userLogin;
+                            userLogin = reader["LOGIN"] as string;  
                         }
                     }
                 }
             }
-            return errorResult;
+            return userLogin;
 
             //var foundUser = usersInBase.Find(user => user.userLogin == login);
             //string search = foundUser.userName;

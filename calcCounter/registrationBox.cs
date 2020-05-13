@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -79,7 +80,11 @@ namespace calcCounter
             loginBox loginBoxReturn = new loginBox();
             loginBoxReturn.Show();
         }
-
+        //static string Hash(string input)
+        //{
+        //    var hash = new SHA1Managed().ComputeHash(Encoding.UTF8.GetBytes(input));
+        //    return string.Concat(hash.Select(b => b.ToString("x2")));
+        //}
         private void returnToLoginBoxButton_Click(object sender, EventArgs e)
         {
             this.Hide();
