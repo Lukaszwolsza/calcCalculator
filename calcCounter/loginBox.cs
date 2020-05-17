@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design.Serialization;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -47,25 +48,37 @@ namespace calcCounter
         {
             getUserLoginD getuserlog = getUserLogin;
             getUserPasswordD getuserpass = getUserPassword;
-
-            //userLoginDisplay = getUserLogin();
-
+            userLoginDisplay = getUserLogin();
             string loginInfo = getuserlog();
             string passwordInfo = getuserpass();
-            bool isLogged;
+            bool isLogged = false;
 
             //BASE CONNECT
             connectToBaseUser cntToUserBase = new connectToBaseUser();
             isLogged = cntToUserBase.userAuthenticationInBase(loginInfo, passwordInfo);
 
+            
+
+            
+            if (isLogged)
+            {
+                MessageBox.Show("You're logged !");
+                this.Hide();
+                mainBox mainMenuBox = new mainBox();
+                mainMenuBox.Show();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect password !");
+                isLogged = false;
+            }
+
+
             // OLD USERSERVICE
             //userService userserv = new userService();
             //isLogged = userserv.userAuthentication(loginInfo, passwordInfo);
 
-            //if (isLogged)
-            //{
-            //    this.Close();
-            //}
+
         }
         private void registryNewUserButton_Click(object sender, EventArgs e)
         {

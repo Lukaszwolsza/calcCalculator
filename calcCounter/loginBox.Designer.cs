@@ -39,9 +39,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.exitRedButton = new System.Windows.Forms.Button();
             this.yellowMinimalizeButton = new System.Windows.Forms.Button();
+            this.exitRedButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +82,7 @@
             // 
             this.loginInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.loginInput.Font = new System.Drawing.Font("Microsoft YaHei Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.loginInput.Location = new System.Drawing.Point(252, 89);
+            this.loginInput.Location = new System.Drawing.Point(258, 89);
             this.loginInput.Name = "loginInput";
             this.loginInput.Size = new System.Drawing.Size(211, 20);
             this.loginInput.TabIndex = 2;
@@ -91,7 +91,7 @@
             // 
             this.passwordInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordInput.Font = new System.Drawing.Font("Microsoft YaHei Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordInput.Location = new System.Drawing.Point(252, 163);
+            this.passwordInput.Location = new System.Drawing.Point(258, 163);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.Size = new System.Drawing.Size(211, 20);
             this.passwordInput.TabIndex = 3;
@@ -174,15 +174,16 @@
             this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
             this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
             // 
-            // label1
+            // yellowMinimalizeButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(21, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "kcalCalculator";
+            this.yellowMinimalizeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.yellowMinimalizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowMinimalizeButton.Location = new System.Drawing.Point(451, 7);
+            this.yellowMinimalizeButton.Name = "yellowMinimalizeButton";
+            this.yellowMinimalizeButton.Size = new System.Drawing.Size(20, 20);
+            this.yellowMinimalizeButton.TabIndex = 12;
+            this.yellowMinimalizeButton.UseVisualStyleBackColor = false;
+            this.yellowMinimalizeButton.Click += new System.EventHandler(this.yellowMinimalizeButton_Click);
             // 
             // exitRedButton
             // 
@@ -195,16 +196,15 @@
             this.exitRedButton.UseVisualStyleBackColor = false;
             this.exitRedButton.Click += new System.EventHandler(this.exitRedButton_Click);
             // 
-            // yellowMinimalizeButton
+            // label1
             // 
-            this.yellowMinimalizeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.yellowMinimalizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowMinimalizeButton.Location = new System.Drawing.Point(451, 7);
-            this.yellowMinimalizeButton.Name = "yellowMinimalizeButton";
-            this.yellowMinimalizeButton.Size = new System.Drawing.Size(20, 20);
-            this.yellowMinimalizeButton.TabIndex = 12;
-            this.yellowMinimalizeButton.UseVisualStyleBackColor = false;
-            this.yellowMinimalizeButton.Click += new System.EventHandler(this.yellowMinimalizeButton_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(21, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "kcalCalculator";
             // 
             // loginBox
             // 

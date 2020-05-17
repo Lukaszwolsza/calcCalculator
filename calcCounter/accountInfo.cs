@@ -15,7 +15,7 @@ namespace calcCounter
         public accountInfo()
         {
             InitializeComponent();
-            userService newservice = new userService();
+            //userService newservice = new userService();
             loginBox loginbox = new loginBox();
 
             string login = loginBox.userLoginDisplay;
@@ -24,11 +24,11 @@ namespace calcCounter
             //newservice.completingTheInfoAboutUser(login);
         }
 
-        //public double getUserBMR(int age, int weight, int height)
-        //{
-        //    double bmrCalculated = (10 * weight) + (6.25 * height) - (5 * age) + 5;
-        //    return bmrCalculated;
-        //}
+        public double getUserBMR(int age, int weight, int height)
+        {
+            double bmrCalculated = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+            return bmrCalculated;
+        }
 
         public void completeAllData(string name, string lastname, string email, int age, int weight, int height)
         {
@@ -60,17 +60,19 @@ namespace calcCounter
 
         public double getBMI()
         {
-            userService newservice = new userService();
+            // <LIST> CONNECTION
+            //userService newservice = new userService();
             loginBox loginbox = new loginBox();
+            connectToBaseUser cntToBaseUser = new connectToBaseUser();
 
             double BmiCalculated = 0;
             string login = loginBox.userLoginDisplay;
 
-            string gender = newservice.userGender(login);
+            string gender = cntToBaseUser.userGender(login);
 
-            double weight = newservice.userWeight(login);
-            double height = newservice.userHeight(login);
-            double age = newservice.userAge(login);
+            double weight = cntToBaseUser.userWeight(login);
+            double height = cntToBaseUser.userHeight(login);
+            double age = cntToBaseUser.userAge(login);
 
 
             BmiCalculated = Math.Round(weight / ((height * height) / 10000), 3);
@@ -80,41 +82,42 @@ namespace calcCounter
 
         public double getBMR()
         {
-            userService newservice = new userService();
+            // <LIST> CONNECTION
+            //userService newservice = new userService();
             loginBox loginbox = new loginBox();
+            connectToBaseUser cntToBaseUser = new connectToBaseUser();
 
             double bmrCalculated = 0;
             string login = loginBox.userLoginDisplay;
 
+            string gender = cntToBaseUser.userGender(login);
+            double weight = cntToBaseUser.userWeight(login);
+            double height = cntToBaseUser.userHeight(login);
+            double age = cntToBaseUser.userAge(login);
 
-            string gender = newservice.userGender(login);
-
-            double weight = newservice.userWeight(login);
-            double height = newservice.userHeight(login);
-            double age = newservice.userAge(login);
-
-            if (gender == "Female")
+            if (gender == "F")
             {
                 bmrCalculated = Math.Round((10 * weight) + (6.25 * height) - (5 * age) - 161, 3);
-                
             }
-            else if (gender == "Male")
+            else if (gender == "M")
             {
                 bmrCalculated = Math.Round((10 * weight) + (6.25 * height) - (5 * age) + 5, 3);
-                
             }
             return bmrCalculated;
         }
 
         private void accountInfo_Load(object sender, EventArgs e)
         {
-            userService newservice = new userService();
-            loginBox loginbox = new loginBox();
+            // <LIST> CONNECTION
+            //userService newservice = new userService();
 
+            loginBox loginbox = new loginBox();
+            connectToBaseUser cntToBaseUser = new connectToBaseUser();
+           
             string login = loginBox.userLoginDisplay;
-            double weight = newservice.userWeight(login);
-            double height = newservice.userHeight(login);
-            double age = newservice.userAge(login);
+            double weight = cntToBaseUser.userWeight(login);
+            double height = cntToBaseUser.userHeight(login);
+            double age = cntToBaseUser.userAge(login);
             
 
             if(getBMI() < 16)
@@ -150,13 +153,13 @@ namespace calcCounter
                 statusOfBmiLabel.Text = "Obese Class III";
             }
 
-            nameTextLabel.Text = newservice.userGreetingAndName(login);
-            lastNameTextLabel.Text = newservice.userLastName(login);
-            emailLabel.Text = newservice.userEmail(login);
+            nameTextLabel.Text = cntToBaseUser.userName(login);
+            lastNameTextLabel.Text = cntToBaseUser.userLastName(login);
+            emailLabel.Text = cntToBaseUser.userEmail(login);
             ageLabel.Text = age.ToString();
             weightLabel.Text = weight.ToString() + " kg";
             heightLabel.Text = height.ToString() + " cm";
-            genderTextLabel.Text = newservice.userGender(login);
+            genderTextLabel.Text = cntToBaseUser.userGender(login);
             bmrTextLabel.Text = getBMR().ToString() + " kcal/day";
             bmiTextLabel.Text = getBMI().ToString();
 
@@ -194,6 +197,11 @@ namespace calcCounter
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

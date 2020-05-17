@@ -50,19 +50,19 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.genderTextLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -160,7 +160,7 @@
             // 
             this.nameTextLabel.AutoSize = true;
             this.nameTextLabel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nameTextLabel.Location = new System.Drawing.Point(29, 41);
+            this.nameTextLabel.Location = new System.Drawing.Point(18, 42);
             this.nameTextLabel.Name = "nameTextLabel";
             this.nameTextLabel.Size = new System.Drawing.Size(23, 25);
             this.nameTextLabel.TabIndex = 22;
@@ -170,7 +170,7 @@
             // 
             this.lastNameTextLabel.AutoSize = true;
             this.lastNameTextLabel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F);
-            this.lastNameTextLabel.Location = new System.Drawing.Point(297, 41);
+            this.lastNameTextLabel.Location = new System.Drawing.Point(287, 42);
             this.lastNameTextLabel.Name = "lastNameTextLabel";
             this.lastNameTextLabel.Size = new System.Drawing.Size(23, 25);
             this.lastNameTextLabel.TabIndex = 23;
@@ -180,7 +180,7 @@
             // 
             this.emailLabel.AutoSize = true;
             this.emailLabel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F);
-            this.emailLabel.Location = new System.Drawing.Point(119, 289);
+            this.emailLabel.Location = new System.Drawing.Point(109, 289);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(23, 25);
             this.emailLabel.TabIndex = 24;
@@ -190,7 +190,7 @@
             // 
             this.ageLabel.AutoSize = true;
             this.ageLabel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F);
-            this.ageLabel.Location = new System.Drawing.Point(29, 120);
+            this.ageLabel.Location = new System.Drawing.Point(18, 121);
             this.ageLabel.Name = "ageLabel";
             this.ageLabel.Size = new System.Drawing.Size(23, 25);
             this.ageLabel.TabIndex = 25;
@@ -200,7 +200,7 @@
             // 
             this.weightLabel.AutoSize = true;
             this.weightLabel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F);
-            this.weightLabel.Location = new System.Drawing.Point(29, 196);
+            this.weightLabel.Location = new System.Drawing.Point(18, 197);
             this.weightLabel.Name = "weightLabel";
             this.weightLabel.Size = new System.Drawing.Size(23, 25);
             this.weightLabel.TabIndex = 26;
@@ -210,7 +210,7 @@
             // 
             this.heightLabel.AutoSize = true;
             this.heightLabel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F);
-            this.heightLabel.Location = new System.Drawing.Point(297, 196);
+            this.heightLabel.Location = new System.Drawing.Point(287, 197);
             this.heightLabel.Name = "heightLabel";
             this.heightLabel.Size = new System.Drawing.Size(23, 25);
             this.heightLabel.TabIndex = 27;
@@ -273,6 +273,7 @@
             this.button1.TabIndex = 29;
             this.button1.Text = "Exit ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -291,7 +292,7 @@
             // 
             this.genderTextLabel.AutoSize = true;
             this.genderTextLabel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F);
-            this.genderTextLabel.Location = new System.Drawing.Point(297, 118);
+            this.genderTextLabel.Location = new System.Drawing.Point(287, 119);
             this.genderTextLabel.Name = "genderTextLabel";
             this.genderTextLabel.Size = new System.Drawing.Size(23, 25);
             this.genderTextLabel.TabIndex = 29;
@@ -328,6 +329,22 @@
             this.panel5.TabIndex = 32;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Black;
+            this.panel9.Location = new System.Drawing.Point(105, 312);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(300, 1);
+            this.panel9.TabIndex = 37;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Black;
+            this.panel11.Location = new System.Drawing.Point(283, 64);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(215, 1);
+            this.panel11.TabIndex = 41;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Black;
@@ -344,35 +361,13 @@
             this.panel7.Size = new System.Drawing.Size(215, 1);
             this.panel7.TabIndex = 35;
             // 
-            // label7
+            // panel13
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(14, 87);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 21);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Age ";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Black;
-            this.panel9.Location = new System.Drawing.Point(105, 312);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(300, 1);
-            this.panel9.TabIndex = 37;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(101, 254);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 21);
-            this.label12.TabIndex = 36;
-            this.label12.Text = "Mail";
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.Location = new System.Drawing.Point(18, 219);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(215, 1);
+            this.panel13.TabIndex = 45;
             // 
             // panel10
             // 
@@ -382,13 +377,35 @@
             this.panel10.Size = new System.Drawing.Size(215, 1);
             this.panel10.TabIndex = 43;
             // 
-            // panel11
+            // panel12
             // 
-            this.panel11.BackColor = System.Drawing.Color.Black;
-            this.panel11.Location = new System.Drawing.Point(283, 64);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(215, 1);
-            this.panel11.TabIndex = 41;
+            this.panel12.BackColor = System.Drawing.Color.Black;
+            this.panel12.Location = new System.Drawing.Point(284, 219);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(215, 1);
+            this.panel12.TabIndex = 47;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(279, 166);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(59, 21);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "Height";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(13, 166);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(62, 21);
+            this.label16.TabIndex = 44;
+            this.label16.Text = "Weight";
             // 
             // label13
             // 
@@ -412,43 +429,27 @@
             this.label14.TabIndex = 40;
             this.label14.Text = "Last name";
             // 
-            // panel12
+            // label12
             // 
-            this.panel12.BackColor = System.Drawing.Color.Black;
-            this.panel12.Location = new System.Drawing.Point(284, 219);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(215, 1);
-            this.panel12.TabIndex = 47;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(101, 254);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 21);
+            this.label12.TabIndex = 36;
+            this.label12.Text = "Mail";
             // 
-            // label15
+            // label7
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(279, 166);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(59, 21);
-            this.label15.TabIndex = 46;
-            this.label15.Text = "Height";
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Black;
-            this.panel13.Location = new System.Drawing.Point(18, 219);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(215, 1);
-            this.panel13.TabIndex = 45;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(13, 166);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 21);
-            this.label16.TabIndex = 44;
-            this.label16.Text = "Weight";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(14, 87);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 21);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Age ";
             // 
             // accountInfo
             // 

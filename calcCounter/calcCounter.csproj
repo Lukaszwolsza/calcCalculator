@@ -65,6 +65,7 @@
     <Compile Include="addProductToMeal.Designer.cs">
       <DependentUpon>addProductToMeal.cs</DependentUpon>
     </Compile>
+    <Compile Include="connectToBaseMeal.cs" />
     <Compile Include="connectToBaseProduct.cs" />
     <Compile Include="connectToBaseUser.cs" />
     <Compile Include="copyrightsBox.cs">

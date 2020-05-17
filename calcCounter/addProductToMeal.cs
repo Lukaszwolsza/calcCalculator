@@ -22,6 +22,22 @@ namespace calcCounter
             connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = cntToBaseProd.displayingProducts();
+
+            List<string> typesofmeal = new List<string>();
+            typesofmeal.Add("Breakfast");
+            typesofmeal.Add("Second Breakfast");
+            typesofmeal.Add("Dinner");
+            typesofmeal.Add("Snack");
+            typesofmeal.Add("Supper");
+
+            typeOfMealBox.Text = "Chose one";
+
+            foreach(string type in typesofmeal)
+            {
+                typeOfMealBox.Items.Add(type);
+            }
+            
+
         }
 
         private void yellowMinimalizeButton_Click(object sender, EventArgs e)
@@ -60,6 +76,35 @@ namespace calcCounter
         private void addNewProdBtn_Click(object sender, EventArgs e)
         {
             
+
         }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string selectedTypeOfMeal = typeOfMealBox.SelectedItem.ToString();
+            DateTime thisDay = DateTime.Today;
+            string cur_date = thisDay.ToString("d");
+
+            loginBox loginbox = new loginBox();
+            string login = loginBox.userLoginDisplay;
+
+            DialogResult res = MessageBox.Show("Are you sure you want to Add", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if(res == DialogResult.OK)
+            {
+                connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
+                var item = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+                cntToBaseProd.addingProdToMeal(item.ToString(), login, selectedTypeOfMeal,cur_date);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Nothing choose");
+            }  
+        }
+
+       
+        
+
+
     }
 }

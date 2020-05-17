@@ -18,11 +18,11 @@ namespace calcCounter
             InitializeComponent();
         }
 
+
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -51,15 +51,20 @@ namespace calcCounter
         {
             //userService newservice = new userService();
             connectToBaseUser cntToUserBase = new connectToBaseUser();
+            connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
             loginBox loginbox = new loginBox();
 
             string login = loginBox.userLoginDisplay;
-            //accountInfo accountinfo = new accountInfo();
-            //double userBMR = accountinfo.getUserBMR(newservice.userAge(login), newservice.userWeight(login), newservice.userHeight(login));
-            //double userBMR = accountinfo.getBMR();
+
+            // <LIST> 
+            accountInfo accountinfo = new accountInfo();
+            double userBMR = accountinfo.getUserBMR(cntToUserBase.userAge(login), cntToUserBase.userWeight(login), cntToUserBase.userHeight(login));
+            double userBMI = accountinfo.getBMI();
+
+            
 
             userNickTextLabel.Text = cntToUserBase.userGreetingAndName(login) + " ! :)";
-            // maxKcalLabel.Text = userBMR.ToString();
+            maxKcalLabel.Text = userBMR.ToString();
 
             //string monthName = DateTime.Now.ToString("MMM", CultureInfo.InvariantCulture);
 
@@ -68,14 +73,14 @@ namespace calcCounter
             DateTime currentDay = DateTime.Today;
             dateLabel.Text += " " + currentDay.ToString("d");
 
-            //double maxP = Math.Round((0.35 * userBMR) / 4 , 0);
-            //double maxT = Math.Round((0.25 * userBMR) / 9 , 0);
-            //double maxC = Math.Round((0.4 * userBMR) / 4 , 0);
+            double maxP = Math.Round((0.35 * userBMR) / 4 , 0);
+            double maxT = Math.Round((0.25 * userBMR) / 9 , 0);
+            double maxC = Math.Round((0.4 * userBMR) / 4 , 0);
             
 
-            //maxProtein.Text = maxP.ToString() + " g";
-            //maxFat.Text = maxT.ToString() + " g";
-            //maxCarbs.Text = maxC.ToString() + " g";
+            maxProtein.Text = maxP.ToString() + " g";
+            maxFat.Text = maxT.ToString() + " g";
+            maxCarbs.Text = maxC.ToString() + " g";
 
 
             // MEALS conf //
@@ -91,6 +96,11 @@ namespace calcCounter
             dinnerLabel.Text = "Nothing";
             snackLabel.Text = "Nothing";
             supperLabel.Text = "Nothing";
+
+            breakfastLabel.Text = cntToBaseProd.prodView(login) + " , ";
+
+
+
         }
 
         private void yellowMinimalizeButton_Click(object sender, EventArgs e)
@@ -135,11 +145,11 @@ namespace calcCounter
         {
 
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             addProductToMeal newprodtomeal = new addProductToMeal();
-            newprodtomeal.Show();
+            newprodtomeal.Show();       
         }
 
         private void button2_Click(object sender, EventArgs e)

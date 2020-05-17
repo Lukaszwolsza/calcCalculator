@@ -59,48 +59,48 @@ namespace calcCounter
 
         
 
-        public string userGreetingAndName(string login)
-        {
-            var foundUser = usersInBase.Find(user => user.userLogin == login);
-            string search = foundUser.userName;
-            return search;
-        }
+        //public string userGreetingAndName(string login)
+        //{
+        //    var foundUser = usersInBase.Find(user => user.userLogin == login);
+        //    string search = foundUser.userName;
+        //    return search;
+        //}
 
-        public string userLastName(string login)
-        {
-            var foundUser = usersInBase.Find(user => user.userLogin == login);
-            string search = foundUser.userLastName;
-            return search;
-        }
-        public string userEmail(string login)
-        {
-            var foundUser = usersInBase.Find(user => user.userLogin == login);
-            string search = foundUser.userEmail;
-            return search;
-        }
-        public int userAge(string login)
-        {
-            var foundUser = usersInBase.Find(user => user.userLogin == login);
-            int search = foundUser.userAge;
-            return search;
-        }
-        public int userWeight(string login)
-        {
-            var foundUser = usersInBase.Find(user => user.userLogin == login);
-            int search = foundUser.userWeight;
-            return search;
-        }
-        public int userHeight(string login)
-        {
-            var foundUser = usersInBase.Find(user => user.userLogin == login);
-            int search = foundUser.userHeight;
-            return search;
-        }
-        public string userGender(string login)
-        {
-            var foundUser = usersInBase.Find(user => user.userLogin == login);
-            string search = foundUser.userGender;
-            return search;
-        }
+        //public string userLastName(string login)
+        //{
+        //    var foundUser = usersInBase.Find(user => user.userLogin == login);
+        //    string search = foundUser.userLastName;
+        //    return search;
+        //}
+        //public string userEmail(string login)
+        //{
+        //    var foundUser = usersInBase.Find(user => user.userLogin == login);
+        //    string search = foundUser.userEmail;
+        //    return search;
+        //}
+        //public int userAge(string login)
+        //{
+        //    var foundUser = usersInBase.Find(user => user.userLogin == login);
+        //    int search = foundUser.userAge;
+        //    return search;
+        //}
+        //public int userWeight(string login)
+        //{
+        //    var foundUser = usersInBase.Find(user => user.userLogin == login);
+        //    int search = foundUser.userWeight;
+        //    return search;
+        //}
+        //public int userHeight(string login)
+        //{
+        //    var foundUser = usersInBase.Find(user => user.userLogin == login);
+        //    int search = foundUser.userHeight;
+        //    return search;
+        //}
+        //public string userGender(string login)
+        //{
+        //    var foundUser = usersInBase.Find(user => user.userLogin == login);
+        //    string search = foundUser.userGender;
+        //    return search;
+        //}
     }
 }
