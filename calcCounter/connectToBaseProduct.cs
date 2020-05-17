@@ -86,6 +86,7 @@ namespace calcCounter
 
             using (var sqlStringConnector = new SqlConnection("Server =.; Database = FatToFit; Trusted_Connection = True;"))
             {
+
                 sqlStringConnector.Open();
                 using (var query = new SqlCommand("SELECT SELECTED_PROD FROM dbo.userProdMeal WHERE USERNAME = '" + username + "'", sqlStringConnector))
                 {
@@ -93,8 +94,17 @@ namespace calcCounter
                     {
                         while (reader.Read())
                         {
-                            products = reader["SELECTED_PROD"] as List<string>;
+                            //products = reader["SELECTED_PROD"] as List<string>;
+
+                            products.Add(reader.GetString(0));
+                            products.Count();
+
                             return products;
+                            //foreach (string prod in products)
+                            //{
+                            //    prod.ToArray();
+                            //    return prod;
+                            //}
                         }
                     }
                 }
