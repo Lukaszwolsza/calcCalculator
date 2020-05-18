@@ -93,7 +93,10 @@ namespace calcCounter
             {
                 connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
                 var item = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-                cntToBaseProd.addingProdToMeal(item.ToString(), login, selectedTypeOfMeal,cur_date);
+                var itemCalories = dataGridView1.Rows[e.RowIndex].Cells[1].Value;
+
+                cntToBaseProd.addingProdToMeal(item.ToString(), login, selectedTypeOfMeal ,cur_date, itemCalories.ToString());
+
                 this.Close();
                 mainBox mainbox = new mainBox();
                 mainbox.Show();
