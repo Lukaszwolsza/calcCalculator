@@ -91,15 +91,19 @@ namespace calcCounter
             //string snack = snackLabel.Text;
             //string supper = supperLabel.Text;
 
-            breakfastLabel.Text = "Nothing";
-            IIbreakbastLabel.Text = "Nothing";
-            dinnerLabel.Text = "Nothing";
-            snackLabel.Text = "Nothing";
-            supperLabel.Text = "Nothing";
+            //breakfastLabel.Text = "Nothing";
+            //IIbreakbastLabel.Text = "Nothing";
+            //dinnerLabel.Text = "Nothing";
+            //snackLabel.Text = "Nothing";
+            //supperLabel.Text = "Nothing";
 
-            breakfastLabel.Text = cntToBaseProd.prodView(login) + " , ";
+            string[] typeofmeal = new string[] { "Breakfast", "Second Breakfast", "Dinner", "Snack", "Supper" };
 
-
+            breakfastLabel.Text = cntToBaseProd.prodView(login,typeofmeal[0]) + " , ";
+            IIbreakbastLabel.Text = cntToBaseProd.prodView(login, typeofmeal[1]) + " , ";
+            dinnerLabel.Text = cntToBaseProd.prodView(login, typeofmeal[2]) + " , ";
+            snackLabel.Text = cntToBaseProd.prodView(login, typeofmeal[3]) + " , ";
+            supperLabel.Text = cntToBaseProd.prodView(login, typeofmeal[4]) + " , ";
 
         }
 
@@ -162,6 +166,7 @@ namespace calcCounter
         {
             addProductToMeal newprodtomeal = new addProductToMeal();
             newprodtomeal.Show();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -184,6 +189,10 @@ namespace calcCounter
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
         }
     }
 }

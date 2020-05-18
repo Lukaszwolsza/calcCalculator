@@ -76,42 +76,69 @@ namespace calcCounter
         }
 
 
-        public List<string> prodView(string username)
+        //public List<string> prodView(string username, string typeofmeal)
+        //{
+
+        //    //string errorResult = "Nothing find";
+        //    List<string> errorResult = new List<string>();
+        //    errorResult.Add("Nothing find !");
+
+        //    List<string> products = new List<string>();
+
+        //    using (var sqlStringConnector = new SqlConnection("Server =.; Database = FatToFit; Trusted_Connection = True;"))
+        //    {
+
+        //        sqlStringConnector.Open();
+        //        using (var query = new SqlCommand("SELECT SELECTED_PROD FROM dbo.userProdMeal WHERE USERNAME = '" + username + "' AND TYPEOFMEAL = '" + typeofmeal + "'", sqlStringConnector))
+        //        {
+        //            using (var reader = query.ExecuteReader())
+        //            {
+        //                while (reader.Read())
+        //                {
+        //                    string prod = reader["SELECTED_PROD"] as string;
+
+        //                    products.Add(prod);
+        //                    //products.Count();  
+        //                }
+        //                return products.;
+        //            }
+        //        }
+        //    }
+        //    return errorResult;
+        //}
+
+
+
+        public string prodView(string username, string typeofmeal)
         {
-            //string errorResult = "Nothing find";
-            List<string> errorResult = new List<string>();
-            errorResult.Add("Nothing find !");
+
+            string errorResult = "Nothing find";
+            //List<string> errorResult = new List<string>();
+            //errorResult.Add("Nothing find !");
 
             List<string> products = new List<string>();
+            string resultOfProducts;
 
             using (var sqlStringConnector = new SqlConnection("Server =.; Database = FatToFit; Trusted_Connection = True;"))
             {
 
                 sqlStringConnector.Open();
-                using (var query = new SqlCommand("SELECT SELECTED_PROD FROM dbo.userProdMeal WHERE USERNAME = '" + username + "'", sqlStringConnector))
+                using (var query = new SqlCommand("SELECT SELECTED_PROD FROM dbo.userProdMeal WHERE USERNAME = '" + username + "' AND TYPEOFMEAL = '" + typeofmeal + "'", sqlStringConnector))
                 {
                     using (var reader = query.ExecuteReader())
                     {
                         while (reader.Read())
                         {
                             //products = reader["SELECTED_PROD"] as List<string>;
-
                             products.Add(reader.GetString(0));
-                            products.Count();
-
-                            return products;
-                            //foreach (string prod in products)
-                            //{
-                            //    prod.ToArray();
-                            //    return prod;
-                            //}
                         }
+                        resultOfProducts = string.Join(", ", products);
+                        return resultOfProducts;
                     }
                 }
             }
             return errorResult;
         }
-        
 
     }
 
