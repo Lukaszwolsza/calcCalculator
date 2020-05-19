@@ -5,12 +5,24 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace calcCounter
 {
+    public static class ProgressBarColor
+    {
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]
+        static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr w, IntPtr l);
+        public static void SetState(this ProgressBar p, int state)
+        {
+            SendMessage(p.Handle, 1040, (IntPtr)state, IntPtr.Zero);
+        }
+    }
+
+
     public partial class mainBox : Form
     {
         public mainBox()
@@ -61,7 +73,6 @@ namespace calcCounter
             double userBMR = accountinfo.getUserBMR(cntToUserBase.userAge(login), cntToUserBase.userWeight(login), cntToUserBase.userHeight(login));
             double userBMI = accountinfo.getBMI();
 
-            
 
             userNickTextLabel.Text = cntToUserBase.userGreetingAndName(login) + " ! :)";
             maxKcalLabel.Text = userBMR.ToString();
@@ -74,30 +85,79 @@ namespace calcCounter
             dateLabel.Text += " " + currentDay.ToString("d");
 
             double maxP = Math.Round((0.35 * userBMR) / 4 , 0);
-            double maxT = Math.Round((0.25 * userBMR) / 9 , 0);
+            double maxF = Math.Round((0.25 * userBMR) / 9 , 0);
             double maxC = Math.Round((0.4 * userBMR) / 4 , 0);
             
 
+
+
             maxProtein.Text = maxP.ToString() + " g";
-            maxFat.Text = maxT.ToString() + " g";
+            maxFat.Text = maxF.ToString() + " g";
             maxCarbs.Text = maxC.ToString() + " g";
 
+            int fullcaloriesEaten = cntToBaseProd.gettingFullCalories(login);
+            caloriesAte.Text = fullcaloriesEaten.ToString();
 
-            // MEALS conf //
+            int fullproteinEaten = cntToBaseProd.gettingFullProtein(login);
+            proteinsAte.Text = fullproteinEaten.ToString();
 
-            //string breakfast = breakfastLabel.Text;
-            //string IIbreakfast = IIbreakbastLabel.Text;
-            //string dinner = dinnerLabel.Text;
-            //string snack = snackLabel.Text;
-            //string supper = supperLabel.Text;
+            int fullfatsEaten = cntToBaseProd.gettingFullFat(login);
+            fatsAte.Text = fullfatsEaten.ToString();
 
-            //breakfastLabel.Text = "Nothing";
-            //IIbreakbastLabel.Text = "Nothing";
-            //dinnerLabel.Text = "Nothing";
-            //snackLabel.Text = "Nothing";
-            //supperLabel.Text = "Nothing";
+            int fullcarbsEaten = cntToBaseProd.gettingFullCarbs(login);
+            carbsAte.Text = fullcarbsEaten.ToString();
 
-            string[] typeofmeal = new string[] { "Breakfast", "Second Breakfast", "Dinner", "Snack", "Supper" };
+            pbCalories.Minimum = 0;
+            pbProtein.Minimum = 0;
+            pbFat.Minimum = 0;
+            pbCarbs.Minimum = 0;
+
+            pbCalories.Maximum = Convert.ToInt32(userBMR);
+            pbProtein.Maximum = Convert.ToInt32(maxP);
+            pbFat.Maximum = Convert.ToInt32(maxF);
+            pbCarbs.Maximum = Convert.ToInt32(maxC);
+
+            pbCalories.Value = Math.Min(fullcaloriesEaten, Convert.ToInt32(userBMR));
+            pbProtein.Value = Math.Min(fullproteinEaten, Convert.ToInt32(maxP));
+            pbFat.Value = Math.Min(fullfatsEaten, Convert.ToInt32(maxF));
+            pbCarbs.Value = Math.Min(fullcarbsEaten, Convert.ToInt32(maxC));
+
+
+            if (pbCalories.Value >= pbCalories.Maximum)
+            {
+                ProgressBarColor.SetState(pbCalories, 2);
+            }
+            if (pbFat.Value >= pbFat.Maximum)
+            {
+                ProgressBarColor.SetState(pbFat, 2);
+            }
+            if (pbProtein.Value >= pbProtein.Maximum)
+            {
+                ProgressBarColor.SetState(pbProtein, 2);
+            }
+            if(pbCarbs.Value >= pbCarbs.Maximum)
+            {
+                ProgressBarColor.SetState(pbCarbs, 2);
+            }
+
+
+
+
+
+                // MEALS conf //
+                //string breakfast = breakfastLabel.Text;
+                //string IIbreakfast = IIbreakbastLabel.Text;
+                //string dinner = dinnerLabel.Text;
+                //string snack = snackLabel.Text;
+                //string supper = supperLabel.Text;
+
+                //breakfastLabel.Text = "Nothing";
+                //IIbreakbastLabel.Text = "Nothing";
+                //dinnerLabel.Text = "Nothing";
+                //snackLabel.Text = "Nothing";
+                //supperLabel.Text = "Nothing";
+
+                string[] typeofmeal = new string[] { "Breakfast", "Second Breakfast", "Dinner", "Snack", "Supper" };
 
             breakfastLabel.Text = cntToBaseProd.prodView(login,typeofmeal[0]) + " , ";
             IIbreakbastLabel.Text = cntToBaseProd.prodView(login, typeofmeal[1]) + " , ";
@@ -196,3 +256,4 @@ namespace calcCounter
         }
     }
 }
+

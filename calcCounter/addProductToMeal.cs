@@ -93,9 +93,13 @@ namespace calcCounter
             {
                 connectToBaseProduct cntToBaseProd = new connectToBaseProduct();
                 var item = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+                
                 var itemCalories = dataGridView1.Rows[e.RowIndex].Cells[1].Value;
+                var itemProteins = dataGridView1.Rows[e.RowIndex].Cells[2].Value;
+                var itemFats = dataGridView1.Rows[e.RowIndex].Cells[3].Value;
+                var itemCarbs = dataGridView1.Rows[e.RowIndex].Cells[4].Value;
 
-                cntToBaseProd.addingProdToMeal(item.ToString(), login, selectedTypeOfMeal ,cur_date, itemCalories.ToString());
+                cntToBaseProd.addingProdToMeal(item.ToString(), login, selectedTypeOfMeal ,cur_date, itemCalories.ToString(), itemProteins.ToString(), itemFats.ToString(), itemCarbs.ToString());
 
                 this.Close();
                 mainBox mainbox = new mainBox();

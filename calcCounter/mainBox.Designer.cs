@@ -41,24 +41,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.yellowMinimalizeButton = new System.Windows.Forms.Button();
             this.exitRedButton = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.caloriesAte = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.maxKcalLabel = new System.Windows.Forms.Label();
             this.maxProtein = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.proteinsAte = new System.Windows.Forms.Label();
             this.maxFat = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.fatsAte = new System.Windows.Forms.Label();
             this.maxCarbs = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.carbsAte = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pbCalories = new System.Windows.Forms.ProgressBar();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.pbCarbs = new System.Windows.Forms.ProgressBar();
+            this.pbFat = new System.Windows.Forms.ProgressBar();
+            this.pbProtein = new System.Windows.Forms.ProgressBar();
             this.dateLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.copyrightsButton = new System.Windows.Forms.Button();
@@ -252,15 +252,15 @@
             this.exitRedButton.UseVisualStyleBackColor = false;
             this.exitRedButton.Click += new System.EventHandler(this.exitRedButton_Click);
             // 
-            // label5
+            // caloriesAte
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(78, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(18, 20);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "0";
+            this.caloriesAte.AutoSize = true;
+            this.caloriesAte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.caloriesAte.Location = new System.Drawing.Point(78, 14);
+            this.caloriesAte.Name = "caloriesAte";
+            this.caloriesAte.Size = new System.Drawing.Size(18, 20);
+            this.caloriesAte.TabIndex = 14;
+            this.caloriesAte.Text = "0";
             // 
             // label6
             // 
@@ -302,15 +302,15 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "/";
             // 
-            // label9
+            // proteinsAte
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(89, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 20);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "0";
+            this.proteinsAte.AutoSize = true;
+            this.proteinsAte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.proteinsAte.Location = new System.Drawing.Point(89, 13);
+            this.proteinsAte.Name = "proteinsAte";
+            this.proteinsAte.Size = new System.Drawing.Size(18, 20);
+            this.proteinsAte.TabIndex = 17;
+            this.proteinsAte.Text = "0";
             // 
             // maxFat
             // 
@@ -332,15 +332,15 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "/";
             // 
-            // label12
+            // fatsAte
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(89, 79);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(18, 20);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "0";
+            this.fatsAte.AutoSize = true;
+            this.fatsAte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.fatsAte.Location = new System.Drawing.Point(89, 79);
+            this.fatsAte.Name = "fatsAte";
+            this.fatsAte.Size = new System.Drawing.Size(18, 20);
+            this.fatsAte.TabIndex = 20;
+            this.fatsAte.Text = "0";
             // 
             // maxCarbs
             // 
@@ -362,22 +362,22 @@
             this.label14.TabIndex = 24;
             this.label14.Text = "/";
             // 
-            // label15
+            // carbsAte
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(89, 145);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(18, 20);
-            this.label15.TabIndex = 23;
-            this.label15.Text = "0";
+            this.carbsAte.AutoSize = true;
+            this.carbsAte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.carbsAte.Location = new System.Drawing.Point(89, 145);
+            this.carbsAte.Name = "carbsAte";
+            this.carbsAte.Size = new System.Drawing.Size(18, 20);
+            this.carbsAte.TabIndex = 23;
+            this.carbsAte.Text = "0";
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.progressBar1);
+            this.panel2.Controls.Add(this.pbCalories);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.caloriesAte);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.maxKcalLabel);
             this.panel2.Location = new System.Drawing.Point(641, 150);
@@ -385,27 +385,27 @@
             this.panel2.Size = new System.Drawing.Size(208, 61);
             this.panel2.TabIndex = 26;
             // 
-            // progressBar1
+            // pbCalories
             // 
-            this.progressBar1.Location = new System.Drawing.Point(9, 36);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(179, 11);
-            this.progressBar1.TabIndex = 17;
+            this.pbCalories.Location = new System.Drawing.Point(9, 36);
+            this.pbCalories.Name = "pbCalories";
+            this.pbCalories.Size = new System.Drawing.Size(179, 11);
+            this.pbCalories.TabIndex = 17;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.progressBar4);
-            this.panel3.Controls.Add(this.progressBar3);
-            this.panel3.Controls.Add(this.progressBar2);
-            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.pbCarbs);
+            this.panel3.Controls.Add(this.pbFat);
+            this.panel3.Controls.Add(this.pbProtein);
+            this.panel3.Controls.Add(this.fatsAte);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.maxCarbs);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.carbsAte);
+            this.panel3.Controls.Add(this.proteinsAte);
             this.panel3.Controls.Add(this.maxFat);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label11);
@@ -415,26 +415,26 @@
             this.panel3.Size = new System.Drawing.Size(208, 192);
             this.panel3.TabIndex = 27;
             // 
-            // progressBar4
+            // pbCarbs
             // 
-            this.progressBar4.Location = new System.Drawing.Point(9, 168);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(179, 11);
-            this.progressBar4.TabIndex = 27;
+            this.pbCarbs.Location = new System.Drawing.Point(9, 168);
+            this.pbCarbs.Name = "pbCarbs";
+            this.pbCarbs.Size = new System.Drawing.Size(179, 11);
+            this.pbCarbs.TabIndex = 27;
             // 
-            // progressBar3
+            // pbFat
             // 
-            this.progressBar3.Location = new System.Drawing.Point(9, 99);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(179, 11);
-            this.progressBar3.TabIndex = 26;
+            this.pbFat.Location = new System.Drawing.Point(9, 99);
+            this.pbFat.Name = "pbFat";
+            this.pbFat.Size = new System.Drawing.Size(179, 11);
+            this.pbFat.TabIndex = 26;
             // 
-            // progressBar2
+            // pbProtein
             // 
-            this.progressBar2.Location = new System.Drawing.Point(9, 35);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(179, 11);
-            this.progressBar2.TabIndex = 18;
+            this.pbProtein.Location = new System.Drawing.Point(9, 35);
+            this.pbProtein.Name = "pbProtein";
+            this.pbProtein.Size = new System.Drawing.Size(179, 11);
+            this.pbProtein.TabIndex = 18;
             // 
             // dateLabel
             // 
@@ -770,18 +770,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button yellowMinimalizeButton;
         private System.Windows.Forms.Button exitRedButton;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label caloriesAte;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label maxKcalLabel;
         private System.Windows.Forms.Label maxProtein;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label proteinsAte;
         private System.Windows.Forms.Label maxFat;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label fatsAte;
         private System.Windows.Forms.Label maxCarbs;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label carbsAte;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label dateLabel;
@@ -809,9 +809,9 @@
         private System.Windows.Forms.Label snackLabel;
         private System.Windows.Forms.Label dinnerLabel;
         private System.Windows.Forms.Label IIbreakbastLabel;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar4;
-        private System.Windows.Forms.ProgressBar progressBar3;
-        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar pbCalories;
+        private System.Windows.Forms.ProgressBar pbCarbs;
+        private System.Windows.Forms.ProgressBar pbFat;
+        private System.Windows.Forms.ProgressBar pbProtein;
     }
 }

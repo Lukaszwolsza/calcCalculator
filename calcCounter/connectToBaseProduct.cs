@@ -61,38 +61,106 @@ namespace calcCounter
             }
         }
 
-        public void addingProdToMeal(string product, string username, string typeofmeal, string cur_date, string full_calories)
+        public void addingProdToMeal(string product, string username, string typeofmeal, string cur_date, string full_calories, string full_protein, string full_fat, string full_carbs)
         {
 
-            int fullCalories = gettingFullCalories();
+            int fullCalories = gettingFullCalories(username);
             fullCalories = +Convert.ToInt32(full_calories);
 
+            int fullProteins = gettingFullFat(username);
+            fullProteins = +Convert.ToInt32(full_protein);
+
+            int fullFats = gettingFullFat(username);
+            fullFats = +Convert.ToInt32(full_fat);
+
+            int fullCarbs = gettingFullFat(username);
+            fullCarbs = +Convert.ToInt32(full_carbs);
+
+
             string sqlStringConnector = "Server =.; Database = FatToFit; Trusted_Connection = True;";
             using (var sqlConnection = new SqlConnection(sqlStringConnector))
             {
                 sqlConnection.Open();
 
-                using (var command = new SqlCommand($"INSERT INTO dbo.userProdMeal (SELECTED_PROD, USERNAME, TYPEOFMEAL, CUR_DATE, ID_PROD, FULL_CALORIES) VALUES ('{product}','{username}','{typeofmeal}','{cur_date}', '1', '{fullCalories}')", sqlConnection))
+                using (var command = new SqlCommand($"INSERT INTO dbo.userProdMeal (SELECTED_PROD, USERNAME, TYPEOFMEAL, CUR_DATE, ID_PROD, FULL_CALORIES, FULL_PROTEIN, FULL_FAT, FULL_CARBS) VALUES ('{product}','{username}','{typeofmeal}','{cur_date}', '1', '{fullCalories}', '{fullProteins}', '{fullFats}', '{fullCarbs}')", sqlConnection))
                 {
                     var result = command.ExecuteNonQuery();
                 }
             }
         }
 
-        public int gettingFullCalories()
+        public int gettingFullCalories(string username)
         {
+            DateTime thisDay = DateTime.Today;
+            string cur_date = thisDay.ToString("d");
+
             string sqlStringConnector = "Server =.; Database = FatToFit; Trusted_Connection = True;";
             using (var sqlConnection = new SqlConnection(sqlStringConnector))
             {
                 sqlConnection.Open();
 
-                using (var command = new SqlCommand($"SELECT FULL_CALORIES FROM dbo.userProdMeal", sqlConnection))
+                using (var command = new SqlCommand($"SELECT SUM(FULL_CALORIES) AS FULL_CALORIES FROM dbo.userProdMeal WHERE USERNAME = '" + username + "' AND CUR_DATE = '" + cur_date + "' GROUP BY USERNAME", sqlConnection))
                 {
-                    var result = command.ExecuteNonQuery();
-                    return result;
+                    var result = command.ExecuteScalar();
+                    return Convert.ToInt32(result);
                 }
             }
         }
+
+        public int gettingFullProtein(string username)
+        {
+            DateTime thisDay = DateTime.Today;
+            string cur_date = thisDay.ToString("d");
+
+            string sqlStringConnector = "Server =.; Database = FatToFit; Trusted_Connection = True;";
+            using (var sqlConnection = new SqlConnection(sqlStringConnector))
+            {
+                sqlConnection.Open();
+
+                using (var command = new SqlCommand($"SELECT SUM(FULL_PROTEIN) AS FULL_PROTEIN FROM dbo.userProdMeal WHERE USERNAME = '" + username + "' AND CUR_DATE = '" + cur_date + "' GROUP BY USERNAME", sqlConnection))
+                {
+                    var result = command.ExecuteScalar();
+                    return Convert.ToInt32(result);
+                }
+            }
+        }
+        public int gettingFullFat(string username)
+        {
+            DateTime thisDay = DateTime.Today;
+            string cur_date = thisDay.ToString("d");
+
+            string sqlStringConnector = "Server =.; Database = FatToFit; Trusted_Connection = True;";
+            using (var sqlConnection = new SqlConnection(sqlStringConnector))
+            {
+                sqlConnection.Open();
+
+                using (var command = new SqlCommand($"SELECT SUM(FULL_FAT) AS FULL_FAT FROM dbo.userProdMeal WHERE USERNAME = '" + username + "' AND CUR_DATE = '" + cur_date + "' GROUP BY USERNAME", sqlConnection))
+                {
+                    var result = command.ExecuteScalar();
+                    return Convert.ToInt32(result);
+                }
+            }
+        }
+
+        public int gettingFullCarbs(string username)
+        {
+            DateTime thisDay = DateTime.Today;
+            string cur_date = thisDay.ToString("d");
+
+            string sqlStringConnector = "Server =.; Database = FatToFit; Trusted_Connection = True;";
+            using (var sqlConnection = new SqlConnection(sqlStringConnector))
+            {
+                sqlConnection.Open();
+
+                using (var command = new SqlCommand($"SELECT SUM(FULL_CARBS) AS FULL_CARBS FROM dbo.userProdMeal WHERE USERNAME = '" + username + "' AND CUR_DATE = '" + cur_date + "' GROUP BY USERNAME", sqlConnection))
+                {
+                    var result = command.ExecuteScalar();
+                    return Convert.ToInt32(result);
+                }
+            }
+        }
+
+
 
         //public List<string> prodView(string username, string typeofmeal)
         //{
