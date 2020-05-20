@@ -197,6 +197,8 @@ namespace calcCounter
 
         public string prodView(string username, string typeofmeal)
         {
+            DateTime thisDay = DateTime.Today;
+            string cur_date = thisDay.ToString("d");
 
             string errorResult = "Nothing find";
             //List<string> errorResult = new List<string>();
@@ -209,7 +211,7 @@ namespace calcCounter
             {
 
                 sqlStringConnector.Open();
-                using (var query = new SqlCommand("SELECT SELECTED_PROD FROM dbo.userProdMeal WHERE USERNAME = '" + username + "' AND TYPEOFMEAL = '" + typeofmeal + "'", sqlStringConnector))
+                using (var query = new SqlCommand("SELECT SELECTED_PROD FROM dbo.userProdMeal WHERE USERNAME = '" + username + "' AND CUR_DATE = '" + cur_date + "' AND TYPEOFMEAL = '" + typeofmeal + "'", sqlStringConnector))
                 {
                     using (var reader = query.ExecuteReader())
                     {

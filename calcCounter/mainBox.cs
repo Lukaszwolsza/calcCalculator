@@ -12,15 +12,7 @@ using System.Windows.Forms;
 
 namespace calcCounter
 {
-    public static class ProgressBarColor
-    {
-        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]
-        static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr w, IntPtr l);
-        public static void SetState(this ProgressBar p, int state)
-        {
-            SendMessage(p.Handle, 1040, (IntPtr)state, IntPtr.Zero);
-        }
-    }
+   
 
 
     public partial class mainBox : Form
@@ -159,11 +151,13 @@ namespace calcCounter
 
                 string[] typeofmeal = new string[] { "Breakfast", "Second Breakfast", "Dinner", "Snack", "Supper" };
 
-            breakfastLabel.Text = cntToBaseProd.prodView(login,typeofmeal[0]) + " , ";
-            IIbreakbastLabel.Text = cntToBaseProd.prodView(login, typeofmeal[1]) + " , ";
-            dinnerLabel.Text = cntToBaseProd.prodView(login, typeofmeal[2]) + " , ";
-            snackLabel.Text = cntToBaseProd.prodView(login, typeofmeal[3]) + " , ";
-            supperLabel.Text = cntToBaseProd.prodView(login, typeofmeal[4]) + " , ";
+
+
+            breakfastLabel.Text = cntToBaseProd.prodView(login,typeofmeal[0]) + "  ";
+            IIbreakbastLabel.Text = cntToBaseProd.prodView(login, typeofmeal[1]) + "  ";
+            dinnerLabel.Text = cntToBaseProd.prodView(login, typeofmeal[2]) + "  ";
+            snackLabel.Text = cntToBaseProd.prodView(login, typeofmeal[3]) + "  ";
+            supperLabel.Text = cntToBaseProd.prodView(login, typeofmeal[4]) + "  ";
 
         }
 
@@ -255,5 +249,16 @@ namespace calcCounter
         {
         }
     }
+
+    public static class ProgressBarColor
+    {
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]
+        static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr w, IntPtr l);
+        public static void SetState(this ProgressBar p, int state)
+        {
+            SendMessage(p.Handle, 1040, (IntPtr)state, IntPtr.Zero);
+        }
+    }
+
 }
 

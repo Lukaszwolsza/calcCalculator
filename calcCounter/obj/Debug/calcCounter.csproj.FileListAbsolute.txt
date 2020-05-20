@@ -65,4 +65,4 @@ C:\Users\Luasek\Desktop\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter
 C:\Users\Luasek\Desktop\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.exe
 C:\Users\Luasek\Desktop\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.pdb
 C:\Users\Luasek\Desktop\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.csproj.CoreCompileInputs.cache
-C:\Users\Luasek\Desktop\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.ProgressBarColor.resources
+C:\Users\Luasek\Desktop\github-project-jipp-c#\calcCounter\obj\Debug\calcCounter.mainBox.resources
