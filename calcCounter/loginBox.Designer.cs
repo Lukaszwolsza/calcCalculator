@@ -42,6 +42,9 @@
             this.yellowMinimalizeButton = new System.Windows.Forms.Button();
             this.exitRedButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.loggingBarProgress = new System.Windows.Forms.ProgressBar();
+            this.infoLogginBoxLabel = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,7 +131,7 @@
             this.loginBoxExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.loginBoxExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginBoxExitButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.loginBoxExitButton.Location = new System.Drawing.Point(432, 278);
+            this.loginBoxExitButton.Location = new System.Drawing.Point(434, 296);
             this.loginBoxExitButton.Name = "loginBoxExitButton";
             this.loginBoxExitButton.Size = new System.Drawing.Size(73, 27);
             this.loginBoxExitButton.TabIndex = 7;
@@ -141,7 +144,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(191, 317);
+            this.panel1.Size = new System.Drawing.Size(190, 351);
             this.panel1.TabIndex = 8;
             // 
             // panel2
@@ -206,12 +209,41 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "kcalCalculator";
             // 
+            // loggingBarProgress
+            // 
+            this.loggingBarProgress.Location = new System.Drawing.Point(205, 275);
+            this.loggingBarProgress.Maximum = 150;
+            this.loggingBarProgress.Name = "loggingBarProgress";
+            this.loggingBarProgress.Size = new System.Drawing.Size(204, 30);
+            this.loggingBarProgress.TabIndex = 12;
+            this.loggingBarProgress.Visible = false;
+            // 
+            // infoLogginBoxLabel
+            // 
+            this.infoLogginBoxLabel.AutoSize = true;
+            this.infoLogginBoxLabel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.infoLogginBoxLabel.ForeColor = System.Drawing.Color.Black;
+            this.infoLogginBoxLabel.Location = new System.Drawing.Point(295, 308);
+            this.infoLogginBoxLabel.Name = "infoLogginBoxLabel";
+            this.infoLogginBoxLabel.Size = new System.Drawing.Size(25, 25);
+            this.infoLogginBoxLabel.TabIndex = 13;
+            this.infoLogginBoxLabel.Text = "A";
+            this.infoLogginBoxLabel.Visible = false;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
             // loginBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(517, 317);
+            this.ClientSize = new System.Drawing.Size(517, 335);
+            this.Controls.Add(this.infoLogginBoxLabel);
+            this.Controls.Add(this.loggingBarProgress);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -251,6 +283,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button yellowMinimalizeButton;
         private System.Windows.Forms.Button exitRedButton;
+        private System.Windows.Forms.ProgressBar loggingBarProgress;
+        private System.Windows.Forms.Label infoLogginBoxLabel;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

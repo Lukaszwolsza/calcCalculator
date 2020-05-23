@@ -129,7 +129,7 @@ namespace calcCounter
             }
             if(pbCarbs.Value >= pbCarbs.Maximum)
             {
-                ProgressBarColor.SetState(pbCarbs, 2);
+                ProgressBarColor.SetState(pbCarbs, 2); 
             }
 
 

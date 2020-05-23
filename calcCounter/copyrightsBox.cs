@@ -47,8 +47,6 @@ namespace calcCounter
             }
 
 
-
-
             int y = 20;
             int x = 55;
             int yU = 20;
