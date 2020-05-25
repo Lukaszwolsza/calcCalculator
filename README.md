@@ -5,7 +5,7 @@ App created to count all calories and macronutrient.
 ## Getting Started
 
 Project is shared on my site and you can download it here:
-http://lukaszwolsza.pl/Fat To Fit.zip
+[Fat To Fit App](http://lukaszwolsza.pl/FatToFit.zip) 
 
 ## Built With
 
